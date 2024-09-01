@@ -1,0 +1,1526 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Structure &#8212; OSCAR Requirements Manual for PoC 0.1.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction to the Cookbook" href="cookbook.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="cookbook.html" title="Introduction to the Cookbook"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">OSCAR Requirements Manual for PoC 0.1.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Structure</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="structure">
+<span id="id1"></span><h1>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h1>
+<section id="general-overview">
+<h2>General overview<a class="headerlink" href="#general-overview" title="Permalink to this headline">¶</a></h2>
+<p>The OSCAR Requirements database is designed as a “flat” (two
+dimensional) database. It is not structured or collected with (layered)
+sub databases. That implies that the list of variables contains all
+variables shown in one table with its definitions, the application area
+linked to the Earth System Application Category, a Domain and the
+measurements units to be used. Within the web pages weblinks are
+provided to subpages or direct links being crosslinks to other sections.
+Moreover, internal links are provided opening a window with detailed
+explanations of the chosen item or to start an action (for instance
+editing or deleting a variable)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>the layout of the Graphic User Interface is different for a PoC
+after login (in editing mode) compared to the standard layout (public
+mode)</p>
+</div>
+<p>Although the database is presented as one “flat” database, without
+nested sub-databases the variables themselves are classified, organized
+in Domains. Each Domain has its subdomains. Also, each variable is
+representative for specific layers in the atmosphere. For instance, the
+variable “Accumulated precipitation (over 24 h)” is member of the
+sub-domain “Clouds and precipitation”, being part of the Domain
+“Atmosphere”. For this variable the layer may be “Near surface”. For
+several quantities, like Air Temperature, several layers are associated
+with this quantity resulting in a set of variables. So, there exist
+several variables for Air Temperature, each variable associated with
+another layer.</p>
+<p><a class="reference internal" href="_images/fig-str-01.gif"><img alt="figureS01" src="_images/fig-str-01.gif" style="width: 325px; height: 146px;" /></a></p>
+<p>For several Application Areas (AA) the same variables are nominated but
+with different quantitative requirements. That implies that such a
+variable is listed more than once in the list of Requirements, each
+having their own requirements associated to the particular AA. For
+instance, the variable “Accumulated precipitation (over 24 h)” is
+nominated by five different Application Areas within the Earth System
+Application Category “Atmospheric Applications”.</p>
+<p><a class="reference internal" href="_images/fig-str-02.gif"><img alt="figureS02" src="_images/fig-str-02.gif" style="width: 305px; height: 350px;" /></a></p>
+<p>In summary, in the web page for OSCAR/requirements two lists of
+variables are presented:</p>
+<ol class="arabic simple">
+<li><p>Variables, providing a list of all (unique) variables, classified per
+Domain, to be nominated by any Application Area associated with that
+Domain. Each variable may be associated with several layers.</p></li>
+<li><p>Requirements, providing a list of the same variables, but associated
+with only one Application Area and specific layer having its own
+requirements. As a consequence, this second list is much longer than
+the first list.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Further details and explanations on Requirements or Variables
+are given below.</p>
+</div>
+<p>Other relevant “tabs” on this web page are:</p>
+<ol class="arabic simple">
+<li><p>Layers (vertical Layers and horizontal Coverages)</p></li>
+<li><p>Themes (Cross-cutting themes)</p></li>
+<li><p>Application Areas.</p></li>
+</ol>
+</section>
+<section id="layers-vertical-layers-and-horizontal-coverages">
+<h2>Layers (vertical Layers and horizontal Coverages)<a class="headerlink" href="#layers-vertical-layers-and-horizontal-coverages" title="Permalink to this headline">¶</a></h2>
+<p>The tab Layers provides a list of vertical Layers and horizontal
+Coverages. The Layers have a Vertical dimension. Each ‘layer’ refers to
+a range of altitude or depth where a physical variable is measured and a
+requirement for this variable is applicable. This concept allows
+assigning different requirements for the same variable depending on the
+considered altitude or depth. Examples of such layers are “Mid-upper
+stratosphere”, “Top of the atmosphere” and “Near Surface, at the surface
+(in the air)”.</p>
+<p>The “horizontal coverage” parameter locates where the variable is to be
+observed in the horizontal dimension. From the list only one entry must
+be specified. Examples are: Global Land, Coastal areas; Regional, Local
+and Point. The table lists all ‘horizontal coverage’ types used in OSCAR
+to further specify where a specific Requirement is applicable, e.g.,
+only over the oceans, at specific points (Airports), regionally or
+globally.</p>
+<p>Select this TAB for a complete overview of all layers and coverages with
+their definitions and acronyms used in the lists of variables.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For more details about Layers visit this <a class="reference external" href="https://space.oscar.wmo.int/layers">Link</a>.</p>
+</div>
+</section>
+<section id="themes">
+<h2>Themes<a class="headerlink" href="#themes" title="Permalink to this headline">¶</a></h2>
+<p>The tab Themes provides a list with present Cross-cutting themes to show
+a specific view on a topic / area of interest which is not otherwise
+covered by domains or the WMO application areas. Themes are used to add
+additional semantic information (“tagging”) to variables. This can then
+be used for filtering purposes in the Requirements or Variables table.
+Examples are Cryosphere and Volcanoes.</p>
+<p>Select this TAB for a complete overview of all themes with their areas
+of interest and associated variables.</p>
+</section>
+<section id="application-areas-and-application-categories">
+<h2>Application Areas and Application Categories<a class="headerlink" href="#application-areas-and-application-categories" title="Permalink to this headline">¶</a></h2>
+<p>An Application Area is an activity involving the direct use of
+observations that allows National Meteorological and Hydrological
+Services or other organizations to render services related to weather,
+climate and water, and other environmental events, contributing to
+public safety, socioeconomic well-being and development in their
+respective countries. The concept of a WMO Application Area is used in
+the framework of the WMO Roling Review of Requirements and describes a
+homogeneous activity for which it is possible to compile a consistent
+set of observational user requirements agreed upon by community experts
+working in this area.</p>
+<p>Most areas in this list are well described and sorted over the Earth
+System Application Categories (ESAC). An Application Area is only
+associated to one ESAC). The name and e-mail address of the Point of
+Contacts associated to the particular Application Area is provided in
+this table as well.</p>
+<p>The present ESACs and their associated Application Areas are:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>ESAC</strong></p></th>
+<th class="head"><p><strong>Application areas</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://space.oscar.wmo.int/application-category/view/1">1. Space
+Weather
+Applications</a></p></td>
+<td><p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/1_1_sun_heliosphere_and_solar_wind_forecasting_and_monitoring">1.1 Sun, Heliosphere and Solar Wind Forecasting
+and
+Monitoring</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/1_2_energetic_particle_and_magnetosphere_forecasting_and_monitoring">1.2 Energetic Particle and Magnetosphere
+Forecasting and
+Monitoring</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/1_3_ionosphere_thermosphere_and_geomagnetic_field_forecasting_and_monitoring">1.3 Ionosphere, Thermosphere and Geomagnetic
+Field Forecasting and
+Monitoring</a></p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://space.oscar.wmo.int/application-category/view/2">2. Atmospheric
+Applications</a></p></td>
+<td><p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/2_1_global_numerical_weather_prediction_and_real_time_monitoring">2.1 Global Numerical Weather Prediction and
+Real-time
+Monitoring</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/2_2_high_resolution_numerical_weather_prediction">2.2 High-Resolution Numerical Weather
+Prediction</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/2_3_nowcasting_very_short_range_forecasting">2.3 Nowcasting / Very Short-Range
+Forecastin
+g</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/2_8_aeronautical_meteorology">2.8 Aeronautical
+Meteorology</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/2_9_agricultural_meteorology">2.9 Agricultural
+Meteorology</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/2_6_atmospheric_composition_forecasting_and_monitoring">2.6 Atmospheric Composition Forecasting and
+Monitoring</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/2_7_atmospheric_composition_information_services_in_urban_and_populated_areas">2.7 Atmospheric Composition Information Services
+in Urban and Populated
+Areas</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/2_4_sub_seasonal_to_longer_predictions">2.4 Sub-Seasonal to Longer Predi
+ctions</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/2_5_atmospheric_climate_monitoring">2.5 Atmospheric Climate
+Monitoring</a></p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://space.oscar.wmo.int/application-category/view/3">3. Oceanic
+Applications</a></p></td>
+<td><p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/3_1_ocean_forecasting_and_real_time_monitoring">3.1 Ocean Forecasting and Real-Time
+Monitoring</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/3_2_coastal_forecasting">3.2 Coastal
+Forecasting</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/3_3_oceanic_climate_monitoring_and_services">3.3 Oceanic Climate Monitoring and
+Service
+s</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/3_4_tsunami_monitoring_and_detection">3.4 Tsunami Monitoring and D
+etection</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/3_5_marine_environmental_emergency_response">3.5 Marine Environmental Emergency Respons
+e</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/3_6_maritime_safety_ports_to_open_ocean">3.6 Maritime Safety (ports to open o
+cean)</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/3_7_ocean_biogeochemical_cycles">3.7 Ocean Biogeochemical
+Cycles</a></p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://space.oscar.wmo.int/application-category/view/4">4.
+Hydrological
+and Terrestrial
+Applications</a></p></td>
+<td><p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/4_1_hydrological_forecasting_and_real_time_monitoring">4.1 Hydrological Forecasting and Real-time
+Monitoring</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/4_2_hydrological_and_terrestrial_climate_monitoring">4.2 Hydrological and Terrestrial Climate
+Monitoring</a></p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://space.oscar.wmo.int/application-category/view/5">5. Cryospheric
+Applications</a></p></td>
+<td><p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/5_1_terrestrial_cryosphere_forecasting_and_monitoring">5.1 Terrestrial Cryosphere Forecasting and
+Monitoring</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/5_2_sea_ice_forecasting_and_monitoring">5.2 Sea-Ice Forecasting and
+Moni
+toring</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/5_3_cryospheric_climate_monitoring">5.3 Cryospheric Climate
+Monitoring</a></p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://space.oscar.wmo.int/application-category/view/6">6. Integrated
+Earth System
+Applications</a></p></td>
+<td><p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/6_1_earth_system_forecasting_and_monitoring">6.1 Earth System Forecasting and
+Monitorin
+g</a></p>
+<p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas/view/6_2_understanding_earth_system_processes">6.2 Understanding Earth System
+Proce
+sses</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>More details are provided in:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://space.oscar.wmo.int/applicationareas">OSCAR Application Areas</a></p></li>
+<li><p><a class="reference external" href="https://space.oscar.wmo.int/application-category">OSCAR Applications Category</a></p></li>
+</ul>
+</div>
+</section>
+<section id="organization-of-the-website">
+<h2>Organization of the website<a class="headerlink" href="#organization-of-the-website" title="Permalink to this headline">¶</a></h2>
+<p>After start-up in your browser using the <a class="reference external" href="https://space.oscar.wmo.int/">OSCAR primary weblink</a>
+(<a class="reference external" href="https://space.oscar.wmo.int/">https://space.oscar.wmo.int/</a>) you will open the OSCAR homepage:</p>
+<p><a class="reference internal" href="_images/fig-str-03.gif"><img alt="figureS03" src="_images/fig-str-03.gif" style="width: 669px; height: 167px;" /></a></p>
+<p>This page informs in general how the OSCAR webpages are organized with
+three entries:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://space.oscar.wmo.int/observingrequirements">Observation Requirements</a></p></li>
+<li><p><a class="reference external" href="https://space.oscar.wmo.int/spacecapabilities">Satellite Capabilties</a></p></li>
+<li><p><a class="reference external" href="https://space.oscar.wmo.int/surfacecapabilities">Surface based Capabilties</a></p></li>
+</ul>
+<p>This page also informs on the background of OSCAR in general and it is
+recommended to consider the items on this page to obtain a good idea on
+how this web-structure works</p>
+<p>To create, edit and modify the variables that are specific for the
+Application Areas, the tab “Observation Requirements” has to be opened
+(by clicking on it with your mouse cursor) and you will get a page with
+the following header providing an overview:</p>
+<p><a class="reference internal" href="_images/fig-str-04.gif"><img alt="figureS04" src="_images/fig-str-04.gif" style="width: 100%;" /></a></p>
+<p>This page provides a lot of information and additional details on how
+the database is organized, how it can be browsed and with hyperlinks to
+the different items within this area.</p>
+<p>Some items on this page are relevant to consider first:</p>
+<ol class="arabic simple">
+<li><p>In the top right corner, a button is provided indicated as “Login”.
+By clicking on it you get access to the editing environment of
+OSCAR/Requirements using your username and password. More details are
+given further on and in the Cookbook section.</p></li>
+<li><p>Below the “Login” button a “Quick Search” text field is provided.
+This field can be used for fast access to specific Application Areas
+and variable.</p></li>
+<li><p>There is a note on the Uncertainty. “Uncertainty” is a required
+quality figure for the variable, to be filled in, which will be
+explained further on and in the Cookbook</p></li>
+<li><p>This Uncertainty is expressed as three quantities associated with the
+variable, each related to different types of requirements: “goal”,
+“breakthrough” and “threshold”. The definition and explanation for
+these three types of requirements are given further on and in the
+Cookbook. Note that the words “breakthrough” and “threshold” are also
+used in the Manual on the WIGOS (<a class="reference external" href="https://library.wmo.int/records/item/55063-manual-on-the-wmo-integrated-global-observing-system?language_id=15&amp;offset=9">WMO-No. 1160</a>) in association with
+mandatory requirements.</p></li>
+</ol>
+<div class="admonition-important admonition">
+<p class="admonition-title">Important!</p>
+<p><strong>It is recommended not to login directly but to take a quick look first
+to see how the public domain area of this OSCAR web environment is
+organized at present. So, what is shown publicly to all users
+(anonymously).</strong></p>
+</div>
+<p>In this header a sub-structure is shown starting with the tab “Overview”
+(the current page). The other clickable tabs provide direct access to
+the five essential components of this web environment:</p>
+<p><a class="reference internal" href="_images/fig-str-05.gif"><img alt="figureS05" src="_images/fig-str-05.gif" style="width: 611.0px; height: 33.5px;" /></a></p>
+<ul class="simple">
+<li><p>Application Categories (Earth System Application Category, ESAC)</p></li>
+<li><p>Application Areas (AA)</p></li>
+<li><p>Variables (List of all Variables)</p></li>
+<li><p>Requirements (List of all Requirements)</p></li>
+<li><p>Layers (List of vertical Layers and horizontal Coverages)</p></li>
+</ul>
+<p>To create of modify variables it is important to know that only those
+variables associated with the application area (AA) may be edited that
+the PoC is authorized for. To find the appropriate AA one should open
+first the link to “Application Categories”, then select the particular
+ESAC (first column), e.g. “2. Atmospheric Applications” or directly the
+Application Area (second column). For “2.8 Aeronautical Meteorology”.you
+will see on top:</p>
+<p><a class="reference internal" href="_images/fig-str-06.gif"><img alt="figureS06" src="_images/fig-str-06.gif" style="width: 100%;" /></a></p>
+<p>This page shows “Details” for this AA and also the Focal Point (Point of
+Contact: naam and e-mail). On the right all the “Variables measured in
+this Application Area” are shown. You may select in this box a specific
+variable, e.g. “Wind gust” and will get an overview within the List of
+Variable environment with all requirements stated by all AA. Such an
+overview is useful to intercompare requirements among the AAs.</p>
+<p>Alternatively, you may scroll down in the “2.8 Aeronautical Meteorology”
+page and see a table with all variables and their requirements stated by
+this Application Area only. In this example you may find for example
+“Wind gust”.</p>
+<p><a class="reference internal" href="_images/fig-str-07.gif"><img alt="figureS07" src="_images/fig-str-07.gif" style="width: 575px; height: 750px;" /></a></p>
+<p>Note that the variable with its requirements is indexed with an
+“Id”-number (for “Wind gust”: 763). This number relates to the list of
+requirements (i.e. a variable with requirements stated for that
+particular AA) and not to the “Id”-number (for “Wind gust”: 205) that is
+used for the variable itself as shown in the List of Variables (there
+are several AAs linked to this variable, each with its own requirements
+Id). So, the “requirements Id” differs from the “variable Id”.</p>
+<p>Apart from reading out the table, you may also select the
+requirements-id (by mouse clicking on it). You will see an overview of
+that requirement (e.g. Requirement #763 for the application area
+Aeronautical Meteorology). A full overview is provided with all details,
+shown in the table as well.</p>
+<p>The table on the bottom of the Applications Area (AA) page after
+selecting the particular AA (e.g. “2.8 Aeronautical Meteorology”) shows
+a list of requirements, one per row and only for one single variable
+(e.g. 763 “Wind gust”). The table consists of a large number of columns
+(21 in total, from “Id” up to “Performance Comment”)</p>
+<p>Note: to get to the last column you have to scroll down in your browser
+and then use the horizontal slide bar to move it to the right and then
+scroll up the vertical slide bar to its previous position.</p>
+<p>There are alternative ways to get the requirements table for the
+specific application area:</p>
+<ol class="arabic">
+<li><p>By selecting the Variables tab in the sub-header and then click on
+the “Filter table”(top right):</p>
+<p><a class="reference internal" href="_images/fig-str-08.gif"><img alt="figureS08" src="_images/fig-str-08.gif" style="width: 286px; height: 216px;" /></a>
+</p>
+<p>Now you may select particular items (e.g. “2.8 Aeronautical
+Meteorology” under Application Area(s)) by clicking a check box and
+finally to click the “Refresh Table” at the bottom of this
+selection box:</p>
+<p><a class="reference internal" href="_images/fig-str-09.gif"><img alt="figureS09" src="_images/fig-str-09.gif" style="width: 224px; height: 103px;" /></a></p>
+</li>
+<li><p>By selecting the Requirements tab in the sub-header and then follow
+the same procedure as above</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>“Filter instructions” (see link on that webpage) give more
+information on how and what to filter.</p>
+<p>You may download the selection (or the full table) by clicking the
+“Export” button (next to the filter button). An MS Excel file in .xlsx
+format is requested for download. Useful for local applications.
+Uploading a datafile is not possible.</p>
+</div>
+<p>See for more information on the areas Variables, Requirements and Layers
+the sections below.</p>
+</section>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<p>Each requirement for an application area is expressed quantitatively as
+a specific physical variable to be observed, in a specific domain
+(vertical layer/s and horizontal coverage), with a performance level
+quantified in terms of up to eight criteria: uncertainty, horizontal
+resolution, vertical resolution, observing cycle, timeliness and
+stability, as well as the recently added criteria “layer/s quality” and
+“coverage quality”, including “relative priority” (ATP) for each of
+these criteria. To select a full list of all variables you must mouse
+click on the sub-header theme “Variables”:</p>
+<p><a class="reference internal" href="_images/fig-str-10.gif"><img alt="figureS10" src="_images/fig-str-10.gif" style="width: 495px; height: 70px;" /></a></p>
+<p>All variables as defined so far are presented, each with its own
+variable Id. Each row shows a unique variable and also the several
+Application Areas associated with this variable. As explained above you
+may select a set of variables using the “Filter table” button (For
+instance to select a set of variables defined for an Application Area).
+The table has eight columns, indicated by</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 15%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Id</p></td>
+<td><p>Variable
+name</p></td>
+<td><p>Domain</p></td>
+<td><p>Measure-
+ment
+unit</p></td>
+<td><p>Defi-
+nition</p></td>
+<td><p>Uncer-
+tenty
+Units</p></td>
+<td><p>Required
+for App.</p></td>
+<td><p>Layers</p></td>
+</tr>
+</tbody>
+</table>
+<p>These headers stand for the following descriptions:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Id</dt>
+<dd class="field-odd"><p>Variable identification number (an index)</p>
+</dd>
+<dt class="field-even">Variable</dt>
+<dd class="field-even"><p>name Name of the variable (see Definition)</p>
+</dd>
+<dt class="field-odd">Domain</dt>
+<dd class="field-odd"><p>The geophysical Domain or sub-domain, e.g. Land Surface (see
+under the “Layers” section for further explanation)</p>
+</dd>
+<dt class="field-even">Measurement unit</dt>
+<dd class="field-even"><p>The SI unit, used for the variable</p>
+</dd>
+<dt class="field-odd">Definition</dt>
+<dd class="field-odd"><p>A definition for this variable with some extra details to
+prevent confusion with other comparable variables</p>
+</dd>
+<dt class="field-even">Uncertenty Units</dt>
+<dd class="field-even"><p>The SI unit, the uncertainty associated with the variable
+reported value (should be the same as the measurement unit, or relative
+in percentages, %)</p>
+</dd>
+<dt class="field-odd">Required for App.</dt>
+<dd class="field-odd"><p>The list of Application Areas, the variable is
+required.</p>
+</dd>
+<dt class="field-even">Layers</dt>
+<dd class="field-even"><p>The layers for which the variable is associated with (Domain,
+vertical layer), e.g. Terrestrial/Land surface, Atmosphere/Near Surface
+(see under the “Layers” section for further explanation)</p>
+</dd>
+</dl>
+<section id="guiding-principles-for-the-list-of-variables">
+<h3>Guiding principles for the list of variables<a class="headerlink" href="#guiding-principles-for-the-list-of-variables" title="Permalink to this headline">¶</a></h3>
+<p>The list of variables is guided by the following principles:</p>
+<ul class="simple">
+<li><p>Avoiding redundancy between equivalent variables;</p></li>
+<li><p>Adopting a unique designation for a given physical variable;</p></li>
+<li><p>Selecting elementary variables describing basic physical properties
+of the environment rather than complex variables that can be derived
+from other variables;</p></li>
+<li><p>Physical variables should be defined in a “technology free” manner
+and do not necessarily correspond with the output of a particular
+instrument. (See Figure below).</p></li>
+</ul>
+<p>Each variable is documented with:</p>
+<ul class="simple">
+<li><p>A standard designation;</p></li>
+<li><p>A definition, relying as much as possible on community agreed
+definitions and/or the WMO Guide on Instruments and Methods of
+Observation (<a class="reference external" href="https://library.wmo.int/records/item/41650-guide-to-instruments-and-methods-of-observation?language_id=13&amp;back=&amp;offset=">WMO-No. 8</a>);</p></li>
+<li><p>The spatial domain where the variable needs to be observed, i.e. the
+range of atmospheric layers (Lower Troposphere (LT); Higher
+Troposphere (HT); Lower Stratosphere (LS); Higher Stratosphere and
+Mesosphere (HS&amp;M); Total column (TC), or Troposphere column (TRC)),
+or oceanic layers (Deep ocean; Upper ocean), or as a surface area
+(over land, over sea, in costal zone), or terrestrial layers (e.g.
+root region, deep soil, etc.), or outer space layers (e.g.
+ionosphere, on the GEO orbit, at Lagrange Point L1, or sun’s
+surface);</p></li>
+<li><p>The physical unit of the measurement, and the unit utilized for
+expressing its accuracy. For any given physical variable there should
+be only one unit of measurement and one unit for the accuracy.
+Therefore, if different units have to be used when a variable is
+observed as a profile and as a total column, then the 3D variable and
+its total column should be regarded as different variables (e.g.
+<em>Ozone Total Column</em> is listed separately from <em>Ozone)</em> because one
+is measured in Dobson Unit while the other is in mol/mol).</p></li>
+</ul>
+<p><a class="reference internal" href="_images/fig-str-11.gif"><img alt="figureS11" src="_images/fig-str-11.gif" style="width: 538.75px; height: 322.5px;" /></a></p>
+<p><em>The main scope of the observing requirements is the physical
+variables needed to characterize and model the environment (green), as
+opposed to derived products (pink), or instrument output (blue). There
+is however no clear cut between these three broad categories.</em></p>
+</section>
+</section>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>To select a full list of all requirements you must mouse click on the
+sub-header theme “Requirements”:</p>
+<p><a class="reference internal" href="_images/fig-str-12.gif"><img alt="figureS12" src="_images/fig-str-12.gif" style="width: 499px; height: 62px;" /></a></p>
+<p>All requirements as stated by the several application areas are
+presented, each with its own requirements Id. Each row shows a unique
+set of requirements. As explained above you may select a set of
+requirements using the “Filter table” button (For instance to select a
+set of requirements defined for an Application Area). The table has 20
+columns, indicated by</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 18%" />
+<col style="width: 11%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 16%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>Id</p></td>
+<td><p>Variable</p></td>
+<td><p>App
+Area</p></td>
+<td><p>ATP</p></td>
+<td><p>Layers</p></td>
+<td><p>Layers
+Quality</p></td>
+<td><p>Uncertainty</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>9</p></td>
+<td><p>10</p></td>
+<td><p>11</p></td>
+<td><p>12</p></td>
+<td><p>13</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-even"><td><p>Hor
+Res</p></td>
+<td><p>Ver
+Res</p></td>
+<td><p>Obs
+Cyc</p></td>
+<td><p>Stability
+/decade</p></td>
+<td><p>Coverage</p></td>
+<td><p>Coverage
+Quality</p></td>
+<td><p>Conf
+Level</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 18%" />
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>15</p></td>
+<td><p>16</p></td>
+<td><p>17</p></td>
+<td><p>18</p></td>
+<td><p>19</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-even"><td><p>Source</p></td>
+<td><p>General
+Comment</p></td>
+<td><p>Application
+Area
+Comment</p></td>
+<td><p>Horizontal
+Coverage
+Comment</p></td>
+<td><p>Observation
+Comment</p></td>
+<td><p>Perferformance
+Comment</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list simple">
+<dt class="field-odd">Id</dt>
+<dd class="field-odd"><p>Requirements identification number (an index)</p>
+</dd>
+<dt class="field-even">Variable</dt>
+<dd class="field-even"><p>Name of the variable (see Definition in Variable)</p>
+</dd>
+<dt class="field-odd">App Area</dt>
+<dd class="field-odd"><p>Application Area (see Application Areas and Application
+Categories)</p>
+</dd>
+<dt class="field-even">ATP</dt>
+<dd class="field-even"><p>Application-dependent Technical Priority</p>
+</dd>
+<dt class="field-odd">Layers</dt>
+<dd class="field-odd"><p>Domain and layers (see under the “Layers” section for further
+explanation)</p>
+</dd>
+<dt class="field-even">Layers Quality</dt>
+<dd class="field-even"><p>Level of performance if domain/layer is not fully
+covered</p>
+</dd>
+<dt class="field-odd">Uncertainty</dt>
+<dd class="field-odd"><p>The uncertainty associated with the variable reported value
+(should be in the measurement unit, or relative in percentages, %)</p>
+</dd>
+<dt class="field-even">Hor Res</dt>
+<dd class="field-even"><p>Horizontal Resolution (distance)</p>
+</dd>
+<dt class="field-odd">Ver Res</dt>
+<dd class="field-odd"><p>Vertical Resolution (distance)</p>
+</dd>
+<dt class="field-even">Obs Cyc</dt>
+<dd class="field-even"><p>Observing Cycle (a period or interval, expressed in time)</p>
+</dd>
+<dt class="field-odd">Timeliness</dt>
+<dd class="field-odd"><p>Delay in receiving data reports after observation</p>
+</dd>
+<dt class="field-even">Stability / decade</dt>
+<dd class="field-even"><p>Long term stability, expressed as uncertainty over a
+decade</p>
+</dd>
+<dt class="field-odd">Coverage</dt>
+<dd class="field-odd"><p>Representation area from global to point (see under the
+“Layers” section for further explanation)</p>
+</dd>
+<dt class="field-even">Coverage Quality</dt>
+<dd class="field-even"><p>Level of performance if coverage is not fully covered</p>
+</dd>
+<dt class="field-odd">Conf Level</dt>
+<dd class="field-odd"><p>Confidence level of the stated requirements based on
+experiences</p>
+</dd>
+<dt class="field-even">Source</dt>
+<dd class="field-even"><p>Background reference to demonstrate or prove the requirements</p>
+</dd>
+<dt class="field-odd">General</dt>
+<dd class="field-odd"><p>Comment Comment section: General comment</p>
+</dd>
+<dt class="field-even">Application Area Comment</dt>
+<dd class="field-even"><p>Comment section: Application Area related</p>
+</dd>
+<dt class="field-odd">Horizontal Coverage Comment</dt>
+<dd class="field-odd"><p>Comment section: Coverage related</p>
+</dd>
+<dt class="field-even">Observation Comment Comment</dt>
+<dd class="field-even"><p>Comment section:  Observation related</p>
+</dd>
+<dt class="field-odd">Performance Comment</dt>
+<dd class="field-odd"><p>Comment section:  Performance related</p>
+</dd>
+</dl>
+<p>For eight type of requirements performance levels are quantified (see
+performance levels for further explanation):</p>
+<ul class="simple">
+<li><p>Layer/s Quality</p></li>
+<li><p>Uncertainty (see note below)</p></li>
+<li><p>Horizontal resolution</p></li>
+<li><p>Vertical resolution</p></li>
+<li><p>Observing cycle</p></li>
+<li><p>Timeliness</p></li>
+<li><p>Stability.</p></li>
+<li><p>Coverage Quality</p></li>
+</ul>
+<p>Notice that for some headers a simple explanation is provided to be
+obtained by clicking on it:</p>
+<p><a class="reference internal" href="_images/fig-str-13.gif"><img alt="figureS13" src="_images/fig-str-13.gif" style="width: 309px; height: 111px;" /></a></p>
+<section id="domains-layers-and-coverages">
+<h3>Domains, Layers and Coverages<a class="headerlink" href="#domains-layers-and-coverages" title="Permalink to this headline">¶</a></h3>
+<p>To reduce further complexity in the set of variables, a logical
+structure is introduced. The primary backbone of this structure is the
+set of domains. These domains are chosen in line with the geophysical
+areas well known in meteorology, climatology, oceanography and the areas
+of interest within WMO. The selected domains are defined by Atmosphere,
+Ocean, Terrestrial, and Outer Space.</p>
+<p>There is also a 5<sup>th</sup> Domain defined, called Cross-cutting, intended for
+all other items not to be within one of these five domains.</p>
+<p>For the domains sub-domains are defined usually in line with areas of
+interest,</p>
+<div class="line-block">
+<div class="line"><strong>Atmosphere</strong></div>
+<div class="line-block">
+<div class="line">Basic atmospheric</div>
+<div class="line">Clouds and precipitations</div>
+<div class="line">Aerosols and radiation</div>
+<div class="line">Atmospheric chemistry</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Ocean</strong></div>
+<div class="line-block">
+<div class="line">Ocean</div>
+<div class="line">Sea Ice</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Terrestrial</strong></div>
+<div class="line-block">
+<div class="line">Land surface</div>
+<div class="line">Solid Earth and magnetic field</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Outer Space</strong></div>
+<div class="line-block">
+<div class="line">Ionospheric disturbances</div>
+<div class="line">Energetic particles and solar wind</div>
+<div class="line">Solar monitoring</div>
+</div>
+</div>
+<p>In practice a particular variable (e.g. air temperature) will have
+different requirements when applicable for the different sub-domains, so
+the use of domains is an essential item within OSCAR and great care
+should be taken in selecting a domain when a new variable is introduced.</p>
+<p>Within these domains Layers are introduced. The structure based on
+<strong>vertical oriented layers</strong> is chosen because this distinction within
+the geophysical areas is in common practice and therefore the best
+solution (so altitude or depth dependent, like e.g. Troposphere,
+Stratosphere and “Near the surface” for Atmosphere). To avoid confusion,
+it is important to be aware of the difference between Atmosphere/Near
+the surface, Terrestrial/Land Surface and Ocean/Sea Surface. Relevant
+here is the association of the variable: with air, ground or water.</p>
+<p>Other layers are defined for areas with a <strong>horizontal dimension</strong>. This
+dimension is associated with <strong>Coverage</strong>. We may have Global Coverage,
+regional coverage, but also coastal areas down to Point. Point is a
+special issue and used if the variable is valid for one specific
+location (e.g. dedicated locations at airports). Areas for which
+variables are valid to be representative for are for instance
+Sub-regional (area of magnitude 1000 × 1000 km) and Local (area of
+magnitude 100 × 100 km).</p>
+<p>For example, the variable Precipitation (amount, accumulated over 24 h)
+and representative for the amount fallen on the surface is classified
+by:</p>
+<p><a class="reference internal" href="_images/fig-str-14.gif"><img alt="figureS14" src="_images/fig-str-14.gif" style="width: 325px; height: 146px;" /></a></p>
+</section>
+<section id="vertical-layers">
+<h3>Vertical Layers<a class="headerlink" href="#vertical-layers" title="Permalink to this headline">¶</a></h3>
+<p>The domains with the vertical oriented layers are defined by:</p>
+<div class="line-block">
+<div class="line">├ <strong>Domain:</strong> Atmosphere</div>
+<div class="line-block">
+<div class="line">├ <strong>Layer:</strong> Total column (TC)</div>
+<div class="line">├ <strong>Layer:</strong> Troposphere column (TrC)</div>
+<div class="line">├ <strong>Layer:</strong> Mid-upper stratosphere (MUS)</div>
+<div class="line">├ <strong>Layer:</strong> Upper troposphere / lower stratosphere (UTLS)</div>
+<div class="line">├ <strong>Layer:</strong> Free troposphere (FT)</div>
+<div class="line">├ <strong>Layer:</strong> Planetary boundary layer (PBL)</div>
+<div class="line">├ <strong>Layer:</strong> At the surface (in the air) (Near Surface)</div>
+<div class="line">├ <strong>Layer:</strong> At the cloud top surface (Cloud-top)</div>
+<div class="line">├ <strong>Layer:</strong> Top of the atmosphere (TOA)</div>
+<div class="line">├ <strong>Layer:</strong> Low Thermosphere (From 100 km to 200 km altitude) (LoThermo)</div>
+<div class="line">├ <strong>Layer:</strong> High Thermosphere (From 200 to about 500 km altitude) (HiThermo)</div>
+<div class="line">└ <strong>Layer:</strong> Mesosphere (M)</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">├ <strong>Domain:</strong> Ocean</div>
+<div class="line-block">
+<div class="line">├ <strong>Layer:</strong> Surface of the ocean (Sea surface)</div>
+<div class="line">├ <strong>Layer:</strong> Bulk layer (ocean sub-surface) (Bulk)</div>
+<div class="line">├ <strong>Layer:</strong> Upper ocean (Upper oc)</div>
+<div class="line">└ <strong>Layer:</strong> Deep ocean (Deep oc)</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">├ <strong>Domain:</strong> Terrestrial</div>
+<div class="line-block">
+<div class="line">├ <strong>Layer:</strong> Land surface (Land surface)</div>
+<div class="line">├ <strong>Layer:</strong> Root region of the soil (Root)</div>
+<div class="line">├ <strong>Layer:</strong> Deep soil layer (Deep soil)</div>
+<div class="line">└ <strong>Layer:</strong> Interior earth (Interior)</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">├ <strong>Domain:</strong> Outer Space</div>
+<div class="line-block">
+<div class="line">├ <strong>Layer:</strong> Ionosphere (Ionos)</div>
+<div class="line">├ <strong>Layer:</strong> At Lagrange point L1 (about 1,500,000 km from Earth) (L1)</div>
+<div class="line">├ <strong>Layer:</strong> At Lagrange points L4, L5 (L4-L5)</div>
+<div class="line">├ <strong>Layer:</strong> Around the geostationary orbit (Geo)</div>
+<div class="line">├ <strong>Layer:</strong> Low Earth Orbit altitude range (Leo)</div>
+<div class="line">├ <strong>Layer:</strong> Medium Earth Orbit altitude range (Meo)</div>
+<div class="line">├ <strong>Layer:</strong> In the whole heliosphere (Helio)</div>
+<div class="line">├ <strong>Layer:</strong> Solar surface and atmosphere (Sun)</div>
+<div class="line">└ <strong>Layer:</strong> Magnetosphere (Magnet)</div>
+</div>
+</div>
+</section>
+<section id="horizontal-dimension">
+<h3>Horizontal dimension<a class="headerlink" href="#horizontal-dimension" title="Permalink to this headline">¶</a></h3>
+<p>The “horizontal coverage“ parameter locates where the variable is to be
+observed in the horizontal dimension. Exactly one entry must be
+specified. This parameter is largely determined by the size of the
+covered area, i.e. from global to point. A simple structure is
+introduced, but it is relevant to choose for the most appropriate option
+(only one of eight):</p>
+<div class="line-block">
+<div class="line">├ <strong>Global</strong> = Applicable globally</div>
+<div class="line-block">
+<div class="line">├ Global Land = Globally applicable to land surfaces and over land surfaces</div>
+<div class="line">├ Global Ocean = Globally applicable to oceans and ocean surfaces</div>
+<div class="line">└ Coastal areas = Globally applicable to coastal areas</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">├ <strong>Regional</strong> = Applicable in specific WMO regions as defined in “Comments</div>
+<div class="line-block">
+<div class="line">├ Sub-regional = Applicable in specific areas of typically 1000 × 1000 km defined</div>
+<div class="line">│     in “Comments”</div>
+<div class="line">└ Local = Applicable in specific areas of typically 100 × 100 km defined in “Comments”</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">├ <strong>Point</strong> = Applicable at specific locations, e.g. Airports, defined in “Comments</div>
+</div>
+</section>
+<section id="layer-and-coverage">
+<h3>“Layer” and “Coverage”<a class="headerlink" href="#layer-and-coverage" title="Permalink to this headline">¶</a></h3>
+<p>The geographical domain of applicability of a requirement is
+characterized by two attributes:</p>
+<ul class="simple">
+<li><p>“Layer”, which qualifies a vertical range only,</p></li>
+<li><p>“Coverage”, which typically qualifies a horizontal domain. The
+“Coverage” can be global, regional, local (e.g. at airport
+locations), or limited to certain areas such as the oceans, land
+surface, equatorial or polar regions, ionosphere, etc.</p></li>
+</ul>
+<p>It is recalled that indicating a “Layer” is relevant when both the
+variable and the requirement itself depend on the vertical coordinate.
+For instance, atmospheric temperature being a 3D variable and since the
+requirement on atmospheric temperature is more stringent in the
+troposphere than in the high stratosphere, there is a need to register
+two different requirements for these two layers. On the contrary, a
+requirement for “Cloud Top Height” has no “layer” because the variable
+“Cloud Top Height” is not a 3D variable (not a function of height) and a
+fortiori the requirement for this variable is not dependent on height.</p>
+</section>
+<section id="layer-s-quality">
+<h3>Layer/s Quality<a class="headerlink" href="#layer-s-quality" title="Permalink to this headline">¶</a></h3>
+<p>These fields are intended to indicate the level of quality, associated
+to the layers as indicated. At present, no clear recommendation on
+completing this filed is defined</p>
+</section>
+<section id="coverage-quality">
+<h3>Coverage Quality<a class="headerlink" href="#coverage-quality" title="Permalink to this headline">¶</a></h3>
+<p>These fields are intended to indicate the level of quality, associated
+to coverage as indicated. At present, no clear recommendation on
+completing this filed is defined</p>
+</section>
+<section id="application-dependent-technical-priority-atp">
+<h3>Application-dependent Technical Priority (ATP)<a class="headerlink" href="#application-dependent-technical-priority-atp" title="Permalink to this headline">¶</a></h3>
+<p>Each requirement (for a geophysical variable) should be prioritized to
+indicate its relative importance for an Application Area
+(Application-dependent Technical Priority – ATP). Within each
+requirement, each criterion (attribute) should also be prioritized
+(Relative priority) to indicate its relative importance for the specific
+requirement. This is a value in including the notion of prioritization
+in the RRR process. If no priority is given, it means all stated
+requirements have equal priorities when establishing the expected level
+of confidence. Knowing these priorities will help the Application Area
+Points of Contact to do the gap analysis with focus on the critical
+variables to be observed. Moreover, this could contribute to identifying
+core and recommended WIGOS data in the WMO Unified Data Policy.</p>
+<p>The mechanism calls for associating priorities for all requirements that
+get generated through the RRR process and archived in the OSCAR system.
+The priorities are meant for:</p>
+<ol class="arabic simple">
+<li><p>The Requirement itself (e.g., does an application value more the
+near surface temp. than moisture?)</p></li>
+<li><p>The attributes of the Requirement (e.g., for a given Requirement,
+does the spatial resolution more than vertical resolution?)</p></li>
+</ol>
+<p>We call these priorities the Application-dependent Technical Priorities
+(ATP) and should be defined to convey, for a given application area, the
+relative importance between the requirements and, for a given
+requirement, the relative importance between the attributes.</p>
+<p><strong>These priorities (or weights) should be a numerical value between 0
+and 1,</strong> that can be used for optimizing network design purposes. They
+should be defined with a minimum level of granularity i.e., enough to be
+useful but not too complex to assign.</p>
+<p>ATP values are weights, defined in the table below</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Priority Value
+(weight)</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.0</p></td>
+<td><p><strong>Core (1)</strong>: The requirement (or criteria) is <strong>absolutely critical</strong>
+for the application, so meeting at least the breakthrough requirements
+where technical solutions exist, must be the highest priority. Where
+breakthrough requirements are not already being met by existing
+capability, research and development plans should be actively seeking
+to address the gap as a high priority</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.8</p></td>
+<td><p><strong>Recommended (0.8)</strong>: The requirement (or criteria) is essential for
+the application so should meet at least the breakthrough requirements
+where technical solutions exist.  Where breakthrough requirements are
+not already being met by existing capability, research and development
+plans should be actively seeking to address the gap, but with a lower
+priority than those requirement identified as Core</p></td>
+</tr>
+<tr class="row-even"><td><p>0.6</p></td>
+<td><p><strong>Useful (0.6)</strong>: The requirement (or criteria) is useful for the
+application, but not absolutely essential. Meeting the breakthrough
+requirements where technical solutions exist, should be a medium
+priority, but meeting the threshold requirement should be a high
+priority. Where threshold requirements are not already being met by
+existing capability, research and development plans should be actively
+seeking to address the gap, but with a lower priority than
+requirements identified as Recommended or Core</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.4</p></td>
+<td><p><strong>Marginally useful (0.4)</strong>: The requirement (or criteria) is not
+essential for the application. Meeting the threshold requirements
+where technical solutions exist, should be a low priority. Where
+threshold requirements are not already being met by existing
+capability, research and development plans should not be actively
+seeking to address the gap, but opportunities arising should be
+considered</p></td>
+</tr>
+<tr class="row-even"><td><p>0.2</p></td>
+<td><p><strong>Not currently useful (0.2)</strong>: There is no current identified use of
+the requirement (or criteria), but some use may be identified in the
+future.</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.0</p></td>
+<td><p><strong>Not useful (0)</strong>: There is no current or future identified use of
+this requirement (or criteria).</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p><em>Note</em>: priorities for requirements and their attributes are sometimes scientifically
+inter-connected. In other words, the specific requirement (and associated priority) for the
+attributes (of vertical resolution, uncertainty, horizontal resolution, timeliness, observing
+cycle, etc.) sometimes vary depending on the ranges of the other attributes. It is important
+to note that this inter dependency applies to both priorities and requirements ranges.
+Despite this caveat, it is believed however that the requirements’ ranges (and priorities)
+are still very important and informative to the observing systems and networks owners.
+They should be considered as first degree assessment of ranges of requirements and their
+priorities, with the caveat that there are nuances related to the fact that there are spatial,
+temporal and situational variations of the requirements and priorities.</p>
+</div></blockquote>
+<p>An eample of how the priorities will ber show:</p>
+<p><a class="reference internal" href="_images/fig-str-15.gif"><img alt="figureS15" src="_images/fig-str-15.gif" style="width: 100%;" /></a>
+<em>example of how ATP will be indicated</em></p>
+<dl class="simple">
+<dt>More details on ATP policy can be found in</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="_static/Annex_XI.pdf">Prioritization Concept in the WMO RRR Process</a></p></li>
+<li><p><a class="reference external" href="_static/Draft_Prioritization4WMO_RRR_22Apr_mtg_outcome-v2(PDF).pdf">Proposed Prioritization concept in WMO’s Rolling Review Requirement
+(RRR)</a> (<a class="reference external" href="https://wmoomm.sharepoint.com/:w:/s/wmocpdb/Ea_n-dg_prVAn2BAHR9nMDQBvoe3xMBhgk0_4YRM2heFrg?e=H6ZDVa">weblink</a>)</p></li>
+<li><p><a class="reference external" href="_static/RRR_Workshop_20220927_Day1-3.b.3-PrioritizationConcept-SBoukabara.pdf">An Approach to Account for the Prioritization Concept in the WMO
+RRR Process</a> (<a class="reference external" href="https://wmoomm.sharepoint.com/:p:/s/wmocpdb/EYUxNvMQ3CdDpcW_ORRLdQ0BCU_PPvcdBL_HMhCBmsHsAw?e=wt0bAP">weblink</a>)</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="performance-levels">
+<h3>Performance levels<a class="headerlink" href="#performance-levels" title="Permalink to this headline">¶</a></h3>
+<p>Each requirement from a WMO application area for observation of a
+physical variable includes a description of the required performance
+level as appropriate. For each criterion, three values are specified,
+representing respectively the “threshold”, “breakthrough” and “goal”
+levels of performance. These levels may be described as follows:</p>
+<ol class="arabic simple">
+<li><p>The <strong>“threshold”</strong> is the minimum requirement to be met to ensure that
+data are useful. If this performance level is not met, reporting
+such data should be avoided to prevent reduction of the quality of
+the end products.</p></li>
+<li><p>The <strong>“breakthrough”</strong> is an intermediate level between “threshold” and
+“goal” which, if achieved, would result in a <strong>significant</strong>
+improvement for the targeted application. Note that the concept of a
+“breakthrough” level is different to the concept of the optimum
+cost-benefit level, since it refers to a significant increase in the
+value or benefit of an observation, without reference to the costs
+involved.</p></li>
+<li><p>The <strong>“goal”</strong> is an ideal requirement above which further improvements
+are not necessary</p></li>
+</ol>
+<p>In fact these performance levels are based on cost-benefit
+considerations. User requirements are expressed in a technology-free
+manner, and therefore cost free. However, decisions on design and
+implementation of observing systems must take account of cost. The
+relationship between user requirements, as defined by the RRR process,
+and decisions on design and implementation of observing systems based on
+cost-benefit considerations is therefore important. The cost-benefit
+curve for a single observing system, in the context of a single
+application, is illustrated schematically in the figure below. It is
+assumed that “benefit” can be estimated quantitatively and also that it
+can be expressed in financial terms. The cost-benefit curve has the
+following generic characteristics:</p>
+<ul class="simple">
+<li><p>A significant cost must be incurred before any significant benefit is
+derived. Beyond this point (B), additional cost then results in
+increasing benefit. However, a point (A) is reached beyond which
+additional cost does not bring any significant benefit;</p></li>
+<li><p>The “maximum” and “minimum” requirements of the CBS method map on to
+points A and B respectively.</p></li>
+<li><p>The cost-benefit curve will (normally) first cross the line of equal
+cost-benefit at the “break even” point. It represents the point above
+which we can make a (business) case for implementing the system.</p></li>
+<li><p>The optimal point, representing the highest ratio of benefit to cost,
+is also shown.</p></li>
+</ul>
+<p><a class="reference internal" href="_images/fig-str-16.gif"><img alt="figureS16" src="_images/fig-str-16.gif" style="width: 602px; height: 362px;" /></a></p>
+<p><em>Cost-benefit curve for an observing system.</em></p>
+<p>Note that the point of optimal cost-benefit represents a benefit (and
+cost) that is, in general, lower than the point of “maximum
+requirement”. This is important; it is often assumed that we should be
+striving to meet the maximum requirement. Whereas this analysis shows
+that a system meeting “maximum” requirements is likely to deliver a
+level of benefit in a region of diminishing returns. Also a system’s
+performance must exceed the ”minimum” requirement before it is likely to
+be cost-effective.</p>
+<p><em>To summarize</em>:</p>
+<ol class="loweralpha simple">
+<li><p>significant cost must be incurred before any significant benefit is
+derived;</p></li>
+<li><p>the unit cost-benefit slope should be exceeded for cost effective
+systems;</p></li>
+<li><p>optimal cost-benefit occurs after minimum but before maximum user
+requirements are met; and,</p></li>
+<li><p>considerable cost can be incurred in moving from optimal
+cost-benefit to meeting maximum user requirements.</p></li>
+</ol>
+<p><strong>Interpolated breakthrough requirements</strong></p>
+<p>One systematic problem with the Database is a defective understanding of
+the terms “threshold”, “breakthrough” and “goal”.</p>
+<ul class="simple">
+<li><p>The <strong>“goal”</strong> is the <em>most stringent</em> requirement. It is an ideal value
+above which further improvement of the observation would not bring
+any significant improvement in performance for the application in
+question. The goals will evolve as the application make progress and
+develop a capacity to make use of better observations.</p></li>
+<li><p>The <strong>“threshold”</strong> is the <em>minimum</em> requirement that has to be met to
+ensure that data are useful. Below this minimum, the benefit does not
+compensate for the additional cost involved in using the observation.</p></li>
+<li><p>Within the range between threshold and goal requirement, the
+observation becomes progressively more useful. The <strong>“breakthrough”</strong> is
+an <em>intermediate level</em> between “threshold” and “goal“ which, if
+achieved, would result in a significant improvement for the targeted
+application. The breakthrough level may be considered as an optimum
+from a cost-benefit point of view, when planning or designing
+observing systems.</p></li>
+</ul>
+<p>Stating the breakthrough requirement (<em>B</em>) is a frequent source of
+misunderstanding, especially when a true step-improvement moving from
+the threshold (<em>T</em>) to the goal (<em>G</em>) does not exist. Since in any case the
+breakthrough indicates what is aimed at, to indicate a breakthrough
+requirement is useful in any case, even if interpolated. The problem is
+that, in the current Database, the breakthrough requirement <em>B</em>, when
+missing, is usually interpolated by the
+equation <em>B</em> = <span class="math notranslate nohighlight">\(G^{2/3} \times T^{1/3}\)</span>, leading to a value
+too close to the goal (i.e., benefit of <em>B</em> approaching saturation).
+A quadratic average (<em>B</em> = <span class="math notranslate nohighlight">\(G^{1/2} \times T^{1/2}\)</span>) is favourable
+instead. Also interpolated values may not have too many significant
+digits whereas, for requirements, rounded figures are more appropriate.
+Example: with <em>T</em> = 10 and <em>G</em> = 1 we propose the sequence 10 / 3 / 1,
+in stead of e.g. 10 / 2.154 / 1.</p>
+<p>The different performance levels and the ATP are shown in several colours:</p>
+<p><a class="reference internal" href="_images/fig-str-17.gif"><img alt="figureS17" src="_images/fig-str-17.gif" style="width: 675px; height: 43px;" /></a></p>
+</section>
+<section id="uncertainty">
+<h3>Uncertainty<a class="headerlink" href="#uncertainty" title="Permalink to this headline">¶</a></h3>
+<p>The uncertainty is associated with the variable value as reported. It
+shall be in the same measurement unit as the variable, or relative in
+percentages (%). This uncertainty shall the result of a uncertainty
+budget calculus. This budget will contain:</p>
+<ul class="simple">
+<li><p>Measurement uncertainty due to the uncertainty of calibration (with
+traceability to SI)</p></li>
+<li><p>The uncertainty caused by the environmental impact at the location of
+measurement (impact by artificial of natural objects like buildings
+and trees)</p></li>
+<li><p>The uncertainty due to environmental impacts caused by larger scale
+inhomogeneities (typical for land surface and mountainous areas and
+coastal areas)</p></li>
+<li><p>The uncertainty caused by larger scale inhomogeneities (e.g. in case
+the variable represents a 100 × 100 km area)</p></li>
+<li><p>Uncertainties caused by data processing.</p></li>
+</ul>
+<p>The uncertainty characterizes the estimated range of observation errors
+(Root-Mean-Square-Error - RMSE) on the given variable, <strong>with a 68%
+confidence interval</strong> (1 σ, 1 × standard deviation – or <strong>standard</strong>
+uncertainty), which is not in line with international standard practice.
+Providers of observations should interpret the RRR uncertainty
+requirement as a mixture of standard error (bias) and random error,
+combined in the root-mean square sense. The international standard
+practice is to use 95% confidence interval which is 2σ for a standard
+normal distribution. It was adopted by WMO by mutual agreement with the
+International Bureau of Weights and Measures (BIPM) and was developed by
+the Joint Committee for Guides in Metrology (JCGM). It is published as
+Evaluation of measurement data Guide to the expression of uncertainty in
+measurement (<a class="reference external" href="https://www.bipm.org/en/committees/jc/jcgm/publications">JCGM 100, 2008</a>), GUM, a document shared by the JCGM member
+organizations (BIPM, the International Electrotechnical Commission
+(IEC), the International Federation of Clinical Chemistry and Laboratory
+Medicine (IFCC), the International Laboratory Accreditation Cooperation
+(ILAC), the International Organization for Standardization (ISO), the
+International Union of Pure and Applied Chemistry (IUPAC), the
+International Union of Pure and Applied Physics (IUPAP) and the
+International Organization of Legal Metrology (OIML). Further
+explanation and details on its use in meteorology are provided in the
+Guide to Instruments and Methods of Observation (<a class="reference external" href="https://library.wmo.int/records/item/41650-guide-to-instruments-and-methods-of-observation?language_id=13&amp;back=&amp;offset=">WMO-No. 8</a>), Volume I,
+Chapter 1, 1.6. Within the context of this Guide) and other related
+documentation, the term uncertainty is aligned to the International
+Vocabulary of Metrology – Basic and General Concept and Associated
+Terms, <a class="reference external" href="https://www.bipm.org/en/committees/jc/jcgm/publications">JCGM 200:2012</a> (VIM). These publications define <strong>Expanded</strong>
+Uncertainty as a quantity defining an interval about the result of a
+measurement that may be expected to encompass a large fraction of the
+distribution of values that could reasonably be attributed to the
+measurand, at a typical <strong>95% confidence level</strong>. Within INFCOM this is
+the definition used when referring generally to uncertainty, rather than
+RMSE (68% confidence level) expressed here. It is important to take this
+difference of meaning into account when comparing similar information
+between OSCAR and INFCOM. It is also noted that most reputable
+manufacturers of instruments, also comply with the GUM, however, this
+needs to be checked on a case-by-case basis.</p>
+<p>To analyse the stated requirements, i.e. within the capabilities
+analyses, uncertainty, calculated in terms of Root Mean Square Error
+(RMSE) or standard deviation is calculated as follows:</p>
+<p><em>RMSE</em> = <span class="math notranslate nohighlight">\(\sqrt{\dfrac{\sum_{}^{}{{RMS_p}^2 \  \times \ nb\_ obs}}{total\_ nb\_obs}}\)</span></p>
+<p><em>Where</em></p>
+<dl class="field-list simple">
+<dt class="field-odd"><em>RMS</em></dt>
+<dd class="field-odd"><p><em>RMS</em><sub>p</sub> stands for <em>quality of observations</em> in terms
+of a <em>Root Mean Square Error</em> (RMSE) for a given
+platform for the considered variable, instrument type, geographical box
+and domain expressed in the units of the considered variable. Statistics
+will be provided by a monitoring centre in the form of RMS<sub>p</sub>
+(Obs - First Guess) for each individual platform. RMS (Obs - First
+Guess) is a good monitoring measure, but it does not lead directly to a
+measure of observation error, so it cannot directly compare with the
+user requirements for accuracy. So if
+better estimates of uncertainties are available these should be
+preferred and those values stored in the database instead.</p>
+</dd>
+<dt class="field-even"><em>nb_obs</em></dt>
+<dd class="field-even"><p>Number of observations received from a given platform for the
+considered variable, instrument type, geographical box and domain by the
+monitoring centre during the considered monitoring period.</p>
+</dd>
+<dt class="field-odd"><em>total_nb_obs</em></dt>
+<dd class="field-odd"><p>Total number of observations received for the considered
+variable, instrument type, geographical box and domain by the monitoring
+centre during the considered monitoring period = <span class="math notranslate nohighlight">\(\sum_{}^{}{nb\_ obs}\)</span>.</p>
+</dd>
+</dl>
+</section>
+<section id="resolution">
+<h3>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Horizontal Resolution (Hor Res), and</p></li>
+<li><p>Vertical Resolution (Ver Res)</p></li>
+</ul>
+<p>The word <em>Resolution</em> is commonly used for satellite imagery where the
+pixels of the image represent a certain area. Such pixels can be round
+shaped or a square. Resolution can be regarded as the distance between
+the centres of neighbouring areas representing these pixels, or as the
+width or diameter of such an area. For point based in-situ observations,
+the reported values will also represent a specific area. In case of
+networks, consisting of observing sites (stations), their density can be
+converted into a resolution with dimension length. To obtain such
+distance one should calculate the median value of all distances between
+all neighbouring stations of that network.</p>
+<p>Although Resolution and Coverage are correlated, coverage is typically
+associated with an area (or point) for which application output (e.g. a
+forecast) is associated with, resolution is typically associated with
+the density of observations with a specific area to be used for that
+application. Understanding vertical resolution, a series of sequential
+observations reported by a radiosonde or by an aircraft in ascending or
+descending mode can be regarded with mutual distances between the
+measurement points of observation (and with neglectable time intervals).
+These distances can be regarded as vertical resolution.</p>
+<p>Horizontal resolution often reflects the intention of integrating over
+large areas. However, for certain cases, specifically those of
+parameters of fractal nature, the observation needs to be performed at
+the scale of the phenomenon, thus the (spatially-integrated) requirement
+is not suitable to serve as input for satellite/instrument planning
+purposes.</p>
+<p>To analyse the stated requirements, i.e. within the capabilities
+analyses, Horizontal Resolution and Vertical Resolution are calculated
+as follows:</p>
+<div class="line-block">
+<div class="line">HR = <span class="math notranslate nohighlight">\(\sqrt{\dfrac{Box\_ area}{Nb\_ platforms}}\)</span></div>
+<div class="line"><br /></div>
+<div class="line">VR = <span class="math notranslate nohighlight">\(\dfrac{\sum_{}^{}{highest\_ pt\ \  - \  lowest\_ pt}}{\sum_{}^{}{nb\_ levels}}\)</span></div>
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line">= average of the vertical resolution of all profiles weighted by their number of levels.</div>
+</div>
+</div>
+<p><em>Where</em></p>
+<dl class="field-list simple">
+<dt class="field-odd">HR</dt>
+<dd class="field-odd"><p>Average Horizontal Resolution (km) for the considered variable,
+instrument type, geographical box and domain.</p>
+</dd>
+<dt class="field-even">VR</dt>
+<dd class="field-even"><p>Average Vertical Resolution (m) for the considered variable,
+instrument type, geographical box and domain.</p>
+</dd>
+<dt class="field-odd"><em>Box_area</em></dt>
+<dd class="field-odd"><p>Total area in km<sup>2</sup> of the considered geographical box.</p>
+</dd>
+<dt class="field-even"><em>Nb_platforms</em></dt>
+<dd class="field-even"><p>Total number of platforms that have been reporting good
+observations in the considered box during the considered period for the
+considered variable, instrument type, and domain.</p>
+</dd>
+<dt class="field-odd"><em>highest_pt</em></dt>
+<dd class="field-odd"><p>Altitude or depth (m) of the highest point of an individual
+profile report.</p>
+</dd>
+<dt class="field-even"><em>lowest_pt</em></dt>
+<dd class="field-even"><p>Altitude or depth (m) of the lowest point of an individual
+profile report.</p>
+</dd>
+<dt class="field-odd"><em>nb_levels</em></dt>
+<dd class="field-odd"><p>Number of levels of a particular profile observation.</p>
+</dd>
+</dl>
+</section>
+<section id="observing-cycle">
+<h3>Observing cycle<a class="headerlink" href="#observing-cycle" title="Permalink to this headline">¶</a></h3>
+<p>Observing cycle is a period or interval, expressed in time.
+It is the time interval between two reported sequential
+observations.</p>
+<p>For the observing cycle the figures, quoted in the decimal metric
+system, should be recognisable (e.g., 0.1 h ≈ 5 min, 0.25 h = 15 min,
+0.5 h, 1 h, 2 h, 3 h, 6 h, 12 h, 24 h, 168 h = 1 week, 720 h = 1 month,
+etc.).</p>
+<p>A typical problem with the observing cycle is that too often the figure
+reflects the practise of integrating over long time span whereas, for
+the purpose of setting observational requirements, the figure must
+account for the intrinsic parameter variability (e.g., controlled by the
+diurnal cycle).</p>
+<p>To analyse the stated requirements, i.e. within the capabilities
+analyses, Observing cycle is calculated as follows:</p>
+<div class="line-block">
+<div class="line"><em>Observing_cycle</em> = <span class="math notranslate nohighlight">\(\dfrac{\sum_{}^{}{period\_ length}}{total\_ nb\_ obs\ \  - \ 1}\)</span></div>
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line">= average of the observing cycle of all platforms weighted by their number of observations</div>
+</div>
+</div>
+<p><em>Where</em></p>
+<dl class="field-list simple">
+<dt class="field-odd"><em>period_length</em></dt>
+<dd class="field-odd"><p>Total monitoring period (time).</p>
+</dd>
+<dt class="field-even"><em>total_nb_obs</em></dt>
+<dd class="field-even"><p>Total number of observations received for the considered
+variable, instrument type, geographical box and domain by the monitoring
+centre during the considered monitoring
+period = <span class="math notranslate nohighlight">\(\sum_{}^{}{nb\_ obs}\)</span></p>
+</dd>
+</dl>
+</section>
+<section id="timeliness">
+<h3>Timeliness<a class="headerlink" href="#timeliness" title="Permalink to this headline">¶</a></h3>
+<p>Timeliness is defined as the delay in receiving data reports (at the GTS
+hub) after observation (true observation time). It is assumed that
+communication delays over the GTS are of minor significance (one minute
+or less).</p>
+<p>For the delay of availability (or timeliness), the figures, quoted in
+the decimal metric system, should be recognisable (e.g., 0.1 h ≈ 5 min,
+0.25 h = 15 min, 0.5 h, 1 h, 2 h, 3 h, 6 h, 12 h, 24 h, 168 h = 1 week,
+720 h = 1 month, etc.).</p>
+<p>To analyse the stated requirements, i.e. within the capabilities
+analyses, Timeliness is calculated as follows:</p>
+<p><em>Timeliness</em> = <span class="math notranslate nohighlight">\(\dfrac{\sum_{}^{}{(reception\_ time\ - \ observation\_ time)}}{total\_ nb\_ obs}\)</span></p>
+<p><em>Where</em></p>
+<dl class="field-list simple">
+<dt class="field-odd"><em>reception_time</em></dt>
+<dd class="field-odd"><p>Time of receipt at the monitoring centre of an individual
+observation.</p>
+</dd>
+<dt class="field-even"><em>observation_time</em></dt>
+<dd class="field-even"><p>Time of the observation for an individual observation.</p>
+</dd>
+<dt class="field-odd"><em>total_nb_obs</em></dt>
+<dd class="field-odd"><p>Total number of observations received for the considered
+variable, instrument type, geographical box and domain by
+the monitoring centre during the considered monitoring
+period = <span class="math notranslate nohighlight">\(\sum_{}^{}{nb\_ obs}\)</span>.</p>
+</dd>
+</dl>
+</section>
+<section id="stability-decade">
+<h3>Stability / decade<a class="headerlink" href="#stability-decade" title="Permalink to this headline">¶</a></h3>
+<p>Stability is defined here as the maximum permissible cumulative effect
+of systematic changes of the measurement system, to allow long-term
+climate records compiled from assorted measurement systems – percentage
+change per decade. Long term stability, expressed as uncertainty over a
+decade. In fact, the criterion on uncertainty already contains short-
+and long-term stability. Stability figures can be expressed in terms of
+drift (continuous growing bias) or as fluctuations (over years). Long
+term stability expressed in decades is a requirement to be able to
+interpret long term climate records, taking the common uncertainty into
+account but also the uncertainty over years (past and future). In fact,
+long term stability is a specific criterion, part of uncertainty budget,
+but dedicated to long terms (decades).</p>
+</section>
+<section id="confidence-level-conf-level">
+<h3>Confidence level (Conf Level)<a class="headerlink" href="#confidence-level-conf-level" title="Permalink to this headline">¶</a></h3>
+<p>Confidence level of the stated requirements based on experiences.
+Although the requirements are well defined and endorsed, long term
+experience with the quality of these reported variables informs about
+the feasibility of these requirements. In fact, the confidence level is
+more or less an indication of the expected achievability of this
+requirement and an indication for further necessary improvement.</p>
+<p>The four possible values to be entered are relatively subjective:</p>
+<ul class="simple">
+<li><p>firm,</p></li>
+<li><p>tentative,</p></li>
+<li><p>reasonable,</p></li>
+<li><p>speculative</p></li>
+</ul>
+</section>
+<section id="source">
+<h3>Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h3>
+<p>Background reference to demonstrate or prove the requirements. Source
+refers to the <em>primary documentation</em> containing the basic arguments and
+conclusions that underly (or prove) all stated requirements. This
+documentation should be available as public documents. <em>Reference to
+expert teams or single persons only should be avoided</em>. This source
+documentation can be used to argue and understand the stated values
+expressed as requirements for the variables. Without these underlying
+evidences, the stated values cannot be argued with confidence. It is
+important to prove the reliability of any requirement based on
+documented and publicly available evidences in the first place to
+convince users to follow the stated requirements.</p>
+</section>
+<section id="comments">
+<h3>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
+<p>To avoid a confusing mixture of comments, five comment sections are
+introduced so far:</p>
+<ul class="simple">
+<li><p>General Comment: General comment</p></li>
+<li><p>Application Area Comment: Application Area related</p></li>
+<li><p>Horizontal Coverage Comment: coverage related</p></li>
+<li><p>Observation Comment: observation related</p></li>
+<li><p>Performance Comment: Performance related</p></li>
+</ul>
+<p>It is advised to place comments in all sections to provide a better
+understanding of the stated requirements for the user. The text may be
+freely chosen but should be clear for every user to understand.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<p><a class="reference internal" href="#structure"><span class="std std-ref">Goto top</span></a></p>
+<hr class="docutils" />
+<dl class="field-list simple">
+<dt class="field-odd">Version</dt>
+<dd class="field-odd"><p>0.1 (2024-08-31)</p>
+</dd>
+<dt class="field-even">editor</dt>
+<dd class="field-even"><p><cite>JPM</cite></p>
+</dd>
+<dt class="field-odd">update</dt>
+<dd class="field-odd"><p><cite>2024-08-31 17:10 CEST</cite></p>
+</dd>
+<dt class="field-even">status</dt>
+<dd class="field-even"><p><cite>TEST</cite></p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-overview">General overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#layers-vertical-layers-and-horizontal-coverages">Layers (vertical Layers and horizontal Coverages)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#themes">Themes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-areas-and-application-categories">Application Areas and Application Categories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#organization-of-the-website">Organization of the website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variables">Variables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#guiding-principles-for-the-list-of-variables">Guiding principles for the list of variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#domains-layers-and-coverages">Domains, Layers and Coverages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vertical-layers">Vertical Layers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#horizontal-dimension">Horizontal dimension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#layer-and-coverage">“Layer” and “Coverage”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#layer-s-quality">Layer/s Quality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coverage-quality">Coverage Quality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#application-dependent-technical-priority-atp">Application-dependent Technical Priority (ATP)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-levels">Performance levels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uncertainty">Uncertainty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resolution">Resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#observing-cycle">Observing cycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#timeliness">Timeliness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stability-decade">Stability / decade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confidence-level-conf-level">Confidence level (Conf Level)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comments">Comments</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cookbook.html">Guidance (Cookbook)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/structure.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="cookbook.html" title="Introduction to the Cookbook"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">OSCAR Requirements Manual for PoC 0.1.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Structure</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2024, WMO.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    </div>
+  </body>
+</html>
