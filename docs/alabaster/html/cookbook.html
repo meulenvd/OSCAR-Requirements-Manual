@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Introduction to the Cookbook &#8212; OSCAR Requirements Manual for PoC 0.1.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="References" href="references.html" />
+    <link rel="prev" title="Structure" href="structure.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="introduction-to-the-cookbook">
+<span id="cookbook"></span><h1>Introduction to the Cookbook<a class="headerlink" href="#introduction-to-the-cookbook" title="Permalink to this headline">¶</a></h1>
+<section id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>This cookbook is intended as a (simple) stepwise procedure to help the
+PoC and the ESAC Coordinator in modifying the contents of the
+OSCAR/Requirements database. The idea behind the cookbook is to provide
+the actions to be taken in a sequential manner when the database should
+be updated. It is specific for requirements on Variables that are
+required within particular Application Areas.</p>
+<p>Before using this cookbook it is strongly recommended to study the other
+items first to become familiar with OSCAR/requirements, the structure of
+the database and also the developments behind its structure. In case of
+questions, hesitancy, doubt or ambiguity you may contact WMO by <a class="reference external" href="mailto:obs-rrr&#37;&#52;&#48;wmo&#46;int">e-mail</a>. Before contacting WMO it is recommended to check the
+FAQ section and the help pages on OSCAR/requirement.</p>
+<p>It is also recommended to notice and study reference material provided
+in the <a class="reference internal" href="references.html#references"><span class="std std-ref">References</span></a> section. In particular, the
+document indicated with <a class="reference external" href="_static/INFCOM-2-INF06-1(3)-OBSERVATIONAL-DATA-EARTH-SYSTEM-RRR_en.pdf">INFCOM-2/INF. 6.1(3) (2022)</a>,
+Requirements for Observational Data in the
+Framework of the WMO Earth System Approach: The Rolling Review of
+Requirements” and its Annexes and Attachments is valuable.</p>
+</section>
+<section id="step-1-be-prepared">
+<span id="step1"></span><h2>Step 1: “Be prepared”<a class="headerlink" href="#step-1-be-prepared" title="Permalink to this headline">¶</a></h2>
+<p>Before you begin (and login) first investigate the present status of the
+database (DB). Not only your Application Area (AA) should be considered
+but also the requirements for the set of variables you are involved
+with. Comparing the requirements and choice of variables for the other
+AAs may help you to prepare the editing activities.</p>
+<p>As explained in the item Structure under Variables there are rules for
+introducing new variables. The basic rules are</p>
+<ul class="simple">
+<li><p>Avoid redundancy between equivalent variables</p></li>
+<li><p>Adopt a unique designation for a given physical variable</p></li>
+<li><p>Select elementary variables describing basic physical properties of
+the environment rather than complex variables that can be derived
+from other variables</p></li>
+<li><p>Physical variables should be defined in a “technology free” manner
+and do not necessarily correspond with the output of a particular
+instrument.</p></li>
+</ul>
+<p>It will also help if for each variable to be selected or modified, a
+complete overview is drafted with all items to be entered. So, not only
+the six basic requirements (Uncertainty, Horizontal resolution, Vertical
+resolution, Observing cycle, Timeliness and Stability). It is important
+to be able to enter an appropriate (background) reference in the Source
+field. This reference acts as information to support the requirements.</p>
+<p>It is good practice to check first the status of all variables for your
+Application Area (AA). This should be done in two ways:</p>
+<ol class="arabic simple">
+<li><p>Select in Observation Requirements the tab Application Areas. You
+will see a detailed overview and description of your Application Area
+together with a list of variables, grouped in various domains. You
+may wish to select one of the variables, but it is sometimes more
+convenient to follow the route as explained in the other way:</p></li>
+<li><p>Select in Observation Requirements the tab Variables. You will see
+the full and extensive list of all variables, used in all domains and
+all Application Areas. Then you should select a specific set of
+variables using &gt;&gt; Filter table (see figure, with arrow right and
+explanation using “Filter instructions”, arrow left)</p></li>
+</ol>
+<p><a class="reference internal" href="_images/fig-coo-01.gif"><img alt="figureC01" src="_images/fig-coo-01.gif" style="width: 686.4px; height: 262.8px;" /></a></p>
+<p>After opening the Filter table, you will see an overview with many
+selectable items. You may select e.g. the Application Area “Aeronautical
+Meteorology”:</p>
+<p><a class="reference internal" href="_images/fig-coo-02.gif"><img alt="figureC02" src="_images/fig-coo-02.gif" style="width: 445px; height: 267px;" /></a></p>
+<p>At the bottom of this overview, you may Close this window without
+implementing the filter or start filtering by clicking on Refresh Table:</p>
+<p><a class="reference internal" href="_images/fig-coo-03.gif"><img alt="figureC03" src="_images/fig-coo-03.gif" style="width: 492px; height: 176px;" /></a></p>
+<p>After selecting (or deselecting) the items and clicking on Refresh Table
+you will get a new (filtered) overview with only these variables that
+confirm the selecting criteria (in this example all variables associated
+with Aeronautical Meteorology). If you wish you may select additional
+items in the Filter Table to reduce the selection. In practice this
+method is most convenient to check the present status.</p>
+<p>After you have checked the present status of the variables within your
+AA and want to add another or new variable to the set of variables the
+following practice is most adequate in this preparatory phase.</p>
+<ol class="arabic">
+<li><p>If not done already, select in Observation Requirements the tab
+Variables. If items are selected in the Filter Table as explained
+above, deselect all these items and click on Refresh Table. You will
+see now all variables, defined in OSCAR/requirements, even those that
+are not linked to any AA (many!).</p></li>
+<li><p>You may scroll first through the full list of variables (more than
+350 entries). In most cases it is convenient to sort first on the
+Variable name (click on Variable name, see arrow):</p>
+<p><a class="reference internal" href="_images/fig-coo-04.gif"><img alt="figureC04" src="_images/fig-coo-04.gif" style="width: 654.55px; height: 323.0px;" /></a></p>
+</li>
+<li><p>To speed up this process, a quick search may help to find a specific
+variable. To find that variable click on the Quick Search area, on
+the top right (see arrow), and enter (a part of) the name of that
+variable (e.g. temperature or humidity):</p>
+<p><a class="reference internal" href="_images/fig-coo-05.gif"><img alt="figureC05" src="_images/fig-coo-05.gif" style="width: 288px; height: 289px;" /></a></p>
+<p><a class="reference internal" href="_images/fig-coo-06.gif"><img alt="figureC06" src="_images/fig-coo-06.gif" style="width: 314px; height: 457px;" /></a></p>
+<p><a class="reference internal" href="_images/fig-coo-07.gif"><img alt="figureC07" src="_images/fig-coo-07.gif" style="width: 245px; height: 173px;" /></a></p>
+<p>You will see all variables with the entered name in it and you may
+select one of these.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will get only the variables associated with the entered
+name. If you select for instance humidity (see example above) you
+will not get dewpoint temperature. So, it is advised to search for
+all possible names.</p>
+</div>
+<div class="admonition-editing-mode-versus-operational-mode admonition">
+<p class="admonition-title">Editing mode versus operational mode</p>
+<p>Be aware that you will be editing in a test or editing
+environment. After acceptance of your modifications by the
+OSCAR/Requirements Administrator and further review and confirmation the
+changes will be implemented in the operational OSCAR/Requirements
+database (see <a class="reference internal" href="#step5"><span class="std std-ref">Step 5</span></a>)`</p>
+</div>
+</section>
+<section id="step-2-login">
+<span id="step2"></span><h2>Step 2: Login<a class="headerlink" href="#step-2-login" title="Permalink to this headline">¶</a></h2>
+<p>WMO secretariat should has provided you with a username and password
+(UN/PW). UN/PW are private and should be shared. To login you should
+open the <a class="reference external" href="https://space.oscar.wmo.int/">OSCAR website</a> on your browser and
+then select the “Observation Requirements” tab. Selecting this tab will
+prevent login in in other OSCAR environments. On the top right you will
+find “login”:</p>
+<p><a class="reference internal" href="_images/fig-coo-08.gif"><img alt="figureC08" src="_images/fig-coo-08.gif" style="width: 674.0999999999999px; height: 137.89999999999998px;" /></a></p>
+<p>The next webpage asks you for your username and password (UN/PW):</p>
+<p><a class="reference internal" href="_images/fig-coo-09.gif"><img alt="figureC09" src="_images/fig-coo-09.gif" style="width: 671.3px; height: 373.79999999999995px;" /></a></p>
+<p>Enter the UN/PW in these field and click on the “Login” button. If
+successful you will get the following webpage:</p>
+<p><a class="reference internal" href="_images/fig-coo-10.gif"><img alt="figureC10" src="_images/fig-coo-10.gif" style="width: 669.9px; height: 523.6px;" /></a></p>
+<p>On top to the right (arrow 1) you will see your username indicating that
+you are logged in successfully. There you can logout as well and to
+switch back to this entry point (My Dashboard) in case you are lost in
+the many web pages of OSCAR.</p>
+<p>In the area on the right side, you will find personal details. Check
+these items and update the items using (arrow 2) Update my personal
+Data, where you can change tour password as well.</p>
+<p>On the left side you may start to create a new variable or add a new
+requirement to a variable (arrow 3), just by clicking these buttons. But
+in most cases (for PoCs) it is better practice to go to the requirements
+section by clicking the Observations Requirements tab (arrow 4) and go
+to Step 3. This approach is more convenient because from the requirement
+pages an overview is provided of the already defined variables and their
+requirements</p>
+<p>Nevertheless, if you want to create quickly a new variable or add a new
+requirement you may select Add Variable or Add Requirement (3). However,
+these links are also provided on the Variables and Requirements web
+pages (see step 3 and step 4)</p>
+<p>The other items, as shown bottom left (below arrow 3) are specific for
+the maintenance of core OSCAR/Requirements items to be carried out by
+the OSCAR/Requirements Administrators, so <strong>not to be edited by PoCs</strong>:</p>
+<p><a class="reference internal" href="_images/fig-coo-11.gif"><img alt="figureC11" src="_images/fig-coo-11.gif" style="width: 437px; height: 171px;" /></a></p>
+<p>However, the item Manage Requirements in Draft Status will be useful
+later on to control the status of your modifications (see <a class="reference internal" href="#step5"><span class="std std-ref">step
+5</span></a>)</p>
+</section>
+<section id="step-3-select-variables-to-see-what-variables-are-available">
+<span id="step3"></span><h2>Step 3: “Select variables” to see what variables are available<a class="headerlink" href="#step-3-select-variables-to-see-what-variables-are-available" title="Permalink to this headline">¶</a></h2>
+<p>After login in you see the My Dashboard webpage (see step 2). From this
+page you should select the Observations Requirements tab offering other
+tabs (Overview, Application Categories, Application Areas, Variables,
+Requirements, Layers). It is recommended to select first the Variables
+tab and later Requirements (see Step 4). Like in Step 1 you will see the
+full list of variables and you may select a specific set by using the
+Filter table (as explained in <a class="reference internal" href="#step1"><span class="std std-ref">Step 1</span></a>). If you want to modify one of the
+variables associated to your AA than it is useful to select your AA in
+this Filter table. This List of all Variables may look like:</p>
+<p><a class="reference internal" href="_images/fig-coo-12.gif"><img alt="figureC12" src="_images/fig-coo-12.gif" style="width: 683.4px; height: 297.59999999999997px;" /></a></p>
+<p>Important notice: Be aware that these data are from the test (or
+editing) database and some may not have been confirmed yet. So, these
+data may differ from the data in the operational DB (that you will see
+if you are not logged in, see Step 1).</p>
+<p>Typically for this editing environment is that you will see additional
+entries to be clicked on, e.g. Add new variable (see arrow 1), a pencil
+(<a class="reference internal" href="_images/pencil.png"><img alt="pencil" src="_images/pencil.png" style="width: 16px; height: 16px;" /></a> for editing) and e red bullet (<a class="reference internal" href="_images/delete.png"><img alt="delete" src="_images/delete.png" style="width: 16px; height: 16px;" /></a> for deleting), see
+arrow 2. Please be very carefully not to delete a variable from this
+list, unless you are very sure to do so. Editing (clicking on the
+pencil) will edit the variable in general (definition, units), not the
+items uniquely related to your AA. Therefore, editing the variable may
+only be done only if you are allowed to do so. If you click on it
+accidentally you can click on Cancel and will return to the variables
+page for this specific variable (select the Variables tab to obtain the
+Full List again).</p>
+<div class="admonition-important admonition">
+<p class="admonition-title">Important!</p>
+<p><a class="reference internal" href="_images/EDIT-icon.gif"><img alt="EDIT-icon" src="_images/EDIT-icon.gif" style="width: 54px; height: 21px;" /></a>      <a class="reference internal" href="_images/DELETE-icon.gif"><img alt="DELETE-icon" src="_images/DELETE-icon.gif" style="width: 72px; height: 21px;" /></a></p>
+<p>Be very careful with the use of the edit (pencil) and delete buttons</p>
+</div>
+<p>The area in the column “Required for App” lists all Application Areas
+the variable is associated with (see arrow 3). In case this variable is
+associated with your AA, then your AA is shown here as well.</p>
+<p>It is strongly recommended to add an existing variable only to the set
+associated with your AA. That is because redundancy between equivalent
+variables must be avoided. So, don’t select Add new variable (arrow 1)
+if there is already a variable that is defined and shown in the overall
+list.</p>
+<p>Also, only elementary variables must be defined, describing basic
+physical properties of the environment rather than complex variables
+that can be derived from other variables. A good example of an
+incorrectly added variable is Relative Humidity. This variable is in
+fact a secondary type of variable based on two primary variables, Air
+Specific Humidity and Air Temperature. Instead of relative humidity, Air
+Specific Humidity should be chosen.</p>
+<p>Anyway, if a brand-new variable must be created you may click on Add new
+variable and will get:</p>
+<p><a class="reference internal" href="_images/fig-coo-13.gif"><img alt="figureC13" src="_images/fig-coo-13.gif" style="width: 676.1999999999999px; height: 609.6999999999999px;" /></a></p>
+<p>In the area left you enter the new variable name. If applicable you can
+tick in (of leave open) the items “Applied in OSCAR/Space Gap Analysis”,
+and the theme tags Cryosphere or Volcanoes. A subdomain must be selected
+from its list:</p>
+<p><a class="reference internal" href="_images/fig-coo-14.gif"><img alt="figureC14" src="_images/fig-coo-14.gif" style="width: 326px; height: 295px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By selecting a sub-domain, the domain itself is selected
+automatically (see for an overview of domains and sub-domains the item
+Structure (Domains, Layers and Coverages) in this manual and and this
+<a class="reference external" href="https://space.oscar.wmo.int/domains">weblink</a>.</p>
+</div>
+<p>Subsequently an appropriate definition shall be given (or copied from
+the WMO Vocabulary). Note that physical variables should be defined in a
+“technology free” manner and do not necessarily correspond with the
+output of a particular instrument. Furthermore, it is useful to enter
+comments that will help users to understand the meaning of this
+variable. Note that is not always trivial for a user what that meaning
+is.</p>
+<p>In the area right on this page you enter the units, directly associated
+to the variable (Measuring Units, Uncertainty Unit, Stability Unit).
+These units must be SI units (mandatory, see Manual on the WIGOS,
+WMO-No. 1160). It is strongly recommended to use the same units for
+these three fields. In some cases, a variable may not be associated to
+any unit although it is recommended to indicate units as far as possible
+(like mg/kg). In those cases, one may enter “dimensionless” (e.g. for
+numbers) or “%” (percentage, e.g. for cloud coverage). It is allowed to
+choose for relative uncertainty in which case the percentage sign (%)
+may be entered. Note that a facility is provided to enter subscripts and
+superscripts and also special symbols like omega (Ω) and micro (µ).
+Subsequently the units for Horizontal and Vertical Resolution (a
+distance) must be entered (preferably km, m or cm).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>SI stands for The International System of Units , published in
+the <a class="reference external" href="https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf">SI Brochure</a>, issued by the <a class="reference external" href="https://www.bipm.org/en/publications/si-brochure">Bureau international des poids et mesures/
+International Bureau of Weights and Measures</a> (BIPM)</p>
+</div>
+<p>Finally, the specific applicable (vertical) layers associated with this
+variable must be entered. Under the item Structure (Domains, Layers and
+Coverages) in this manual the structure of the vertical layers as part
+of the domains and sub-domains is explained. This structure should be
+well considered when selecting the applicable layers. In case a variable
+will not be associated with any layer (no altitude dependence) then n/a
+(not applicable) or n/a (2D) (not applicable for 2D fields) can be
+selected (for the Cross-cutting domain). See for further explanation of
+the layers the information, provided in the tab Layers (to open this tab
+without losing the data already entered in Create New Variable, right
+click the tab Layers and select Open link in a new tab.) So, click one
+or more from the following list:</p>
+<p><a class="reference internal" href="_images/fig-coo-15.gif"><img alt="figureC15" src="_images/fig-coo-15.gif" style="width: 625px; height: 185px;" /></a></p>
+<p>Example for the variable “Atmospheric temperature” with 7 layers within
+the sub-domain Basic atmospheric:</p>
+<p><a class="reference internal" href="_images/fig-coo-16.gif"><img alt="figureC16" src="_images/fig-coo-16.gif" style="width: 268px; height: 258px;" /></a></p>
+<p>Finally you will get something like in this example:</p>
+<p><a class="reference internal" href="_images/fig-coo-17.gif"><img alt="figureC17" src="_images/fig-coo-17.gif" style="width: 664.62px; height: 557.7px;" /></a></p>
+<p>If all details are entered and complete you can save this new variable
+by clicking on the green button Create Variable on top of this page.
+Clicking on the red button Cancel will close this page without saving
+the details:</p>
+<p><a class="reference internal" href="_images/fig-coo-18.gif"><img alt="figureC18" src="_images/fig-coo-18.gif" style="width: 628.98px; height: 486.42px;" /></a></p>
+<p><em>Example of a created new variable (Air Thickness)</em></p>
+<p>In almost all situations an existing variable can be chosen from the
+List of all variables. Also, in many cases you will only modify or add
+specific information to the variables already selected in the past for
+your AA. For all these cases this Variables webpage is in fact
+informative only. Editing the AA related requirements items for the
+selected variables is done in step 4 on the webpage for Requirements.</p>
+<p>Note: if you have chosen for a variable that is available in the List of
+all Variables, but the details (e.g. units, domain, layers) to not
+confirm to your specifications or are incorrect, you should contact your
+contact within the WMO secretariat (or via <a class="reference external" href="mailto:obs-rrr&#37;&#52;&#48;wmo&#46;int">e-mail</a>).</p>
+</section>
+<section id="step-4-select-requirements-and-select-available-variable-to-be-introduced-for-the-aa">
+<span id="step4"></span><h2>Step 4: “Select requirements” and select available variable to be introduced for the AA<a class="headerlink" href="#step-4-select-requirements-and-select-available-variable-to-be-introduced-for-the-aa" title="Permalink to this headline">¶</a></h2>
+<p>There may be two specific reasons to edit requirements:</p>
+<ol class="arabic simple">
+<li><p>For one or more specific variables within the set of variables of
+your AA, some data must be modified or added. So, an update of the
+present situation.</p></li>
+<li><p>A new or existing variable must be added tot the set of variables of
+your AA. So, a new variable chosen or created as explained in Step 3</p></li>
+</ol>
+<p>In both cases you should open the Requirements webpage, by clicking on
+the Requirements tab. You will get:</p>
+<p><a class="reference internal" href="_images/fig-coo-19.gif"><img alt="figureC19" src="_images/fig-coo-19.gif" style="width: 694.0px; height: 261.5px;" /></a></p>
+<p>Note that you will see the full width of this webpage, just only a
+number of the columns at left. To see the columns on the right, you have
+to scroll down within your browser window to the bottom (or by using the
+ruler, see arrow 1). At the bottom you will find a horizontal ruler
+(arrow 3) you can use by moving rightwards. If successful you can scroll
+up again to the top and see the other columns op to Performance Comment.
+To find the variable you like to modify you should use the inner ruler
+indicated by arrow 2.</p>
+<p><a class="reference internal" href="_images/fig-coo-20.gif"><img alt="figureC20" src="_images/fig-coo-20.gif" style="width: 724.8px; height: 334.2px;" /></a></p>
+<section id="modify-and-add-data-to-an-already-existing-variable">
+<h3>[1] Modify and add data to an already existing variable<a class="headerlink" href="#modify-and-add-data-to-an-already-existing-variable" title="Permalink to this headline">¶</a></h3>
+<p>To modify a variable that is already within the set associated to your
+AA, you should find that specific variable. It is most convenient to
+first filter out the variables that are not associated with your AA.
+This can be done by clicking on the Filter table facility (top right, as
+explained in Step 1) and select your AA and then click on green button
+Refresh table. Subsequently scroll to the variable (in the example
+below, Wind gust for Aeronautical Meteorology, with Req Id #763):</p>
+<p><a class="reference internal" href="_images/fig-coo-21.gif"><img alt="figureC21" src="_images/fig-coo-21.gif" style="width: 382.8px; height: 291.0px;" /></a></p>
+<p>Note: Alternatively, if you don’t like to use the Filter facility, you
+can use the Quick Search facility (top right) by entering (a part of)
+the name of the variable (e.g. wind) and then select that variable from
+the offered list (e.g. Wind gust, see Step 1).</p>
+<p>In the red circle shown in the figure above, you will see four clickable
+entries:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>The name of the variable</p></li>
+<li><p>The Requirements Id number (not the Variable Id as shown on the
+Variables page)</p></li>
+<li><p>A pencil for an editing activity</p></li>
+<li><p>A red button to delete the whole requirement.</p></li>
+</ol>
+</div></blockquote>
+<p>Clicking on the variable name will give the overview as shown in Step 3,
+so with general information and the associated AA’s, not the specific
+requirements. Clicking on the Requirements Id number will give the
+overview associated to this specific requirement.</p>
+<p>Editing this present requirement can be done by clicking on the pencil
+(also within the Requirement Id page). You will see an editing page with
+all details entered so far:</p>
+<p><a class="reference internal" href="_images/fig-coo-22.gif"><img alt="figureC22" src="_images/fig-coo-22.gif" style="width: 629.64px; height: 396.66px;" /></a></p>
+<p>On top two important buttons are shown: (in green) Update Requirement
+and (in red) Cancel (see arrow). The cancel button can be used in case
+of mistakes (all editing is lost), the Update Requirement button is to
+save the modifications and to close this page.</p>
+<p>In the provided text you will see many buttons with question marks (?),
+see small arrows. Clicking on these explanatory buttons will open
+dedicated text areas with detailed information on that topic:</p>
+<p><a class="reference internal" href="_images/fig-coo-23.gif"><img alt="figureC23" src="_images/fig-coo-23.gif" style="width: 388px; height: 496px;" /></a></p>
+<p>On the right side of this page, you will see some metadata information
+and the comment fields. To open (or close) the comment fields you must
+click on it.</p>
+<p>On the bottom of the page, you will see the editable fields with data to
+be modified (or to be filled in). Notice the question mark button
+providing helpful explanations of the various definitions.</p>
+<p><a class="reference internal" href="_images/fig-coo-24.gif"><img alt="figureC24" src="_images/fig-coo-24.gif" style="width: 763.2px; height: 468.8px;" /></a></p>
+<p>After editing and checking you should save the result by clicking on the
+green button on top, Update Requirement. A green banner will indicate a
+successful update.</p>
+</section>
+<section id="creating-a-new-requirement-for-a-new-or-added-variable">
+<h3>[2] Creating a new requirement for a new or added variable<a class="headerlink" href="#creating-a-new-requirement-for-a-new-or-added-variable" title="Permalink to this headline">¶</a></h3>
+<p>In case a new variable must be added to the set associated to your AA
+then the link on top with Add new Requirement shall be used:</p>
+<p><a class="reference internal" href="_images/fig-coo-25.gif"><img alt="figureC25" src="_images/fig-coo-25.gif" style="width: 559px; height: 324px;" /></a></p>
+<p>Clicking on this link will give the following webpage where you select:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>A variable from the list of all variables, inclusive newly created in
+Step 3</p></li>
+<li><p>An Application Area (AA)</p></li>
+</ol>
+</div></blockquote>
+<p>You can select a variable (see arrow 1) or AA (see arrow 2)by clicking
+and selecting, but you may also type in a name and then continue to
+choose the correct items:</p>
+<p><a class="reference internal" href="_images/fig-coo-26.gif"><img alt="figureC26" src="_images/fig-coo-26.gif" style="width: 650.7px; height: 598.5px;" /></a></p>
+<p>After selecting the appropriate variable and AA you should click on the
+green button Create Requirement in which case new Requirement Id number
+is generated and a new web page is opened (e.g. Update Requirement #
+1079) and a green banner is shown on top indicating that the new
+requirement was created. However, if you click on the red button Cancel
+the creation of a new requirement is cancelled. In case you created a
+new requirement the new webpage will look identical to the page when
+editing an existing requirement (see above, Modify and add data to an
+already existing variable). In this case however, you have to fill in
+many open fields although many fields are already filled with default
+values and should be adjusted.</p>
+<p>After editing and checking you should save the result by clicking on the
+green button on top, Update Requirement. Clicking on the red button
+Cancel will exit this update action, keep the requirement as it is.
+Deleting the requirement can be done using the red (Delete) button in
+front of the requirement itself in the Requirement webpage (a green
+banner indicating that the requirement is successfully deleted will be
+shown on top).</p>
+<p>If you finalize the Update Requirement webpage but omit to enter
+mandatory filled in you will get an error message in return saying that
+the requirement could not be saved and request to correct the input:</p>
+<p><a class="reference internal" href="_images/fig-coo-27.gif"><img alt="figureC27" src="_images/fig-coo-27.gif" style="width: 665.0px; height: 471.79999999999995px;" /></a></p>
+<p>In case of a successful update, you will see a green banner on top
+indicating that the requirement has been updated:</p>
+<p><a class="reference internal" href="_images/fig-coo-28.gif"><img alt="figureC28" src="_images/fig-coo-28.gif" style="width: 665.0px; height: 282.09999999999997px;" /></a></p>
+<p>After modifying or creating requirements it is good practice to control
+all edited items before you logout. If checked and accepted, you may
+logout (see top right).</p>
+</section>
+</section>
+<section id="step-5-follow-up-after-updating">
+<span id="step5"></span><h2>Step 5: Follow up after updating<a class="headerlink" href="#step-5-follow-up-after-updating" title="Permalink to this headline">¶</a></h2>
+<p>It is useful to inform by e-mail your contact at the WMO secretariat or
+using <a class="reference external" href="mailto:obs-rrr&#37;&#52;&#48;wmo&#46;int">obs-rrr<span>&#64;</span>wmo<span>&#46;</span>int</a> that modifications were carried out so the
+OSCAR/Requirement Administrator can continue with the confirmation
+process.</p>
+<p>The procedure on how the update is processed and finally confirmed for
+modification in the public database is shown below. As explained in Step
+3 and Step 4 to types modifications are in practice ([1] modification
+and creation of requirements and [2] creating new variables):</p>
+<p><a class="reference internal" href="_images/fig-coo-29.gif"><img alt="figureC29" src="_images/fig-coo-29.gif" style="width: 701.8000000000001px; height: 340.45000000000005px;" /></a></p>
+<p><a class="reference internal" href="_images/fig-coo-30.gif"><img alt="figureC30" src="_images/fig-coo-30.gif" style="width: 700.7px; height: 320.1px;" /></a></p>
+<p>Both processes will take time (may be more than a year). During this
+interval you may check the status by login and by opening the item
+Manage Requirements in Draft in your Dashboard (the webpage you get
+after login).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<p><a class="reference internal" href="#cookbook"><span class="std std-ref">Goto top</span></a></p>
+<hr class="docutils" />
+<dl class="field-list simple">
+<dt class="field-odd">Version</dt>
+<dd class="field-odd"><p>0.1 (2024-08-31)</p>
+</dd>
+<dt class="field-even">editor</dt>
+<dd class="field-even"><p><cite>JPM</cite></p>
+</dd>
+<dt class="field-odd">update</dt>
+<dd class="field-odd"><p><cite>2024-09-14 23:40 CEST</cite></p>
+</dd>
+<dt class="field-even">status</dt>
+<dd class="field-even"><p><cite>TEST</cite></p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">Structure</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guidance (Cookbook)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-be-prepared">Step 1: “Be prepared”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-login">Step 2: Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-3-select-variables-to-see-what-variables-are-available">Step 3: “Select variables” to see what variables are available</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-4-select-requirements-and-select-available-variable-to-be-introduced-for-the-aa">Step 4: “Select requirements” and select available variable to be introduced for the AA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modify-and-add-data-to-an-already-existing-variable">[1] Modify and add data to an already existing variable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-new-requirement-for-a-new-or-added-variable">[2] Creating a new requirement for a new or added variable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#step-5-follow-up-after-updating">Step 5: Follow up after updating</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/cookbook.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, WMO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/cookbook.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
