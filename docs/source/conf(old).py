@@ -61,11 +61,6 @@ exclude_patterns = []
 #
 html_theme = 'sphinxdoc'
 
-html_sidebars = {
-   '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
-   'using/windows': ['windows-sidebar.html', 'searchbox.html'],
-}
-
 # html_theme = 'wmo_sphinx_theme'
 # html_theme_path = wmo_sphinx_theme.get_html_theme_path()
 # html_css_files = [

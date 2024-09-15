@@ -543,7 +543,7 @@ after login).
 
 :editor: `JPM`
 
-:update: `2024-08-31 22:17 CEST`
+:update: `2024-09-14 23:40 CEST`
 
 :status: `TEST`
 
@@ -732,11 +732,11 @@ after login).
    :width: 16px
    :height: 16px
 
-.. |DELETE-icon| image:: _static/DELETE\ icon.gif
+.. |DELETE-icon| image:: _static/DELETE-icon.gif
    :width: 72px
    :height: 21px
 
-.. |EDIT-icon| image:: _static/EDIT\ icon.gif
+.. |EDIT-icon| image:: _static/EDIT-icon.gif
    :width: 54px
    :height: 21px
 

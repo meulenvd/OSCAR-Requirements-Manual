@@ -33,8 +33,8 @@ author = 'WMO'
 # The full version, including alpha/beta/rc tags
 today_fmt = '%Y-%m-%d'
 version = '0.1'
-release = '0.1.2'
-today = '2024-09-14'
+release = '0.1.1'
+today = '2024-08-31'
 
 
 # -- General configuration ---------------------------------------------------

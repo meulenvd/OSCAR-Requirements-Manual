@@ -61,7 +61,7 @@ OSCAR/requirements with many special items:
    -  `Attachment 3 <INF06-Att3_>`_: Reference Guide for Points of Contact (PoC) for
 		  Application Areas, and Coordinators for Earth System Application
 		  Categories, within the WMO Rolling Review of Requirements (RRR)
-		  Process (`official weblink <INF06-Att3-web_>`_
+		  Process (`official weblink <INF06-Att3-web_>`_)
 
 Information on present developments supported by OSCAR/Requirements:
 
@@ -82,29 +82,29 @@ Workshop presentations
 1. `Workshop on the management of observational user requirements for the
    evolved Rolling Review of Requirements in the context of WMO's Earth
    System approach (RRR-Requirements) (27 to 29 September 2022)
-   <RRR_WS_2022-web_>`-
+   <RRR_WS_2022-web_>`_
 
    -  `Supporting the Global Observing Systems Design and Evolution: 
       An Approach to Account for the Prioritization Concept in the WMO RRR Process
-      <RRR_WS_2022_3b3_>`_ (workshop weblink <RRR_WS_2022_3b3-web_>`_ 
+      <RRR_WS_2022_3b3_>`_ (`workshop weblink <RRR_WS_2022_3b3-web_>`_)
 
    - `Guidance for PoCs in the new RRR Process <RRR_WS_2022_5a_>`_ 
-     (workshop weblink <RRR_WS_2022_5a-web_>`_ 
+     (`workshop weblink <RRR_WS_2022_5a-web_>`_)
 
 2. `Rolling Review of Requirements (RRR) - 1st Introductory workshop (17 May 2023) 
    <RRR_WS_2023_1-web_>`_
 
-   - `Welcome & Introduction <RRR_WS_2023_1_intro_>`_ (workshop weblink <RRR_WS_2023_1_intro-web_>`_) 
+   - `Welcome & Introduction <RRR_WS_2023_1_intro_>`_ (`workshop weblink <RRR_WS_2023_1_intro-web_>`_) 
 
    - `History and introduction to the Rolling Review of Requirements 
-     and its evolution <RRR_WS_2023_1_history_>`_ (workshop weblink <RRR_WS_2023_1_history-web_>`_) 
+     and its evolution <RRR_WS_2023_1_history_>`_ (`workshop weblink <RRR_WS_2023_1_history-web_>`_) 
 
-   - `Reference Guide for PoC and Coordinators <RRR_WS_2023_1_guide_>`_ (workshop weblink <RRR_WS_2023_1_guide-web_>`_) 
+   - `Reference Guide for PoC and Coordinators <RRR_WS_2023_1_guide_>`_ (`workshop weblink <RRR_WS_2023_1_guide-web_>`_) 
 
 3. `Rolling Review of Requirements (RRR) - Follow up workshops (5, 11 and
    14 September 2023) <RRR_WS_2023_2-web_>`_
 
-   -  `Update from the Secretariat <RRR_WS_2023_2-update_>`_ (workshop weblink <RRR_WS_2023_2-update-web_>`_) 
+   -  `Update from the Secretariat <RRR_WS_2023_2-update_>`_ (`workshop weblink <RRR_WS_2023_2-update-web_>`_) 
 
 Historic documents
 ------------------
@@ -112,7 +112,7 @@ Historic documents
 -  `User Manual for OSCAR/Space and OSCAR/Requirements-Updated in July
    2021 <OSCAR_Man_2021_>`_
 
--  `User Manual for OSCAR/Space and OSCAR/Requirements (2016) <_OSCAR_Man_2016>`_
+-  `User Manual for OSCAR/Space and OSCAR/Requirements (2016) <OSCAR_Man_2016_>`_
 
 -  `User Manual (Updated August 2013) <OSCAR_Man_2013_>`_
 
@@ -154,7 +154,7 @@ Useful weblinks
 
 :editor: `JPM`
 
-:update: `2024-08-31 13:15 CEST`
+:update: `2024-09-14 23:41 CEST`
 
 :status: `TEST`
 
@@ -163,14 +163,14 @@ Useful weblinks
 .. _INF06-1-1-local: _static/INFCOM-2-INF06-1(1)-HIGH-LEVEL-GUIDANCE-WIGOS-VISION_en.pdf
 .. _INF06-1-1-web: https://meetings.wmo.int/INFCOM-2/_layouts/15/WopiFrame.aspx?sourcedoc={9BAECB91-1135-4A1F-B02F-DC12673C91DF}&file=INFCOM-2-INF06-1(1)-HIGH-LEVEL-GUIDANCE-WIGOS-VISION_en.docx&action=default
 .. _INF06-Intro: _static/Introduction.pdf
-.. _INF06-AnnexI: _static/Annex I.pdf
-.. _INF06-AnnexIII: _static/Annex III.pdf
-.. _INF06-AnnexV: _static/Annex V.pdf
-.. _INF06-AnnexIX: _static/Annex IX.pdf
-.. _INF06-AnnexX: _static/Annex X.pdf
-.. _INF06-AnnexXI: _static/Annex XI.pdf
-.. _INF06-AnnexXII: _static/Annex XII.pdf
-.. _INF06-Att3: _static/ATTACHMENT 3.pdf
+.. _INF06-AnnexI: _static/Annex_I.pdf
+.. _INF06-AnnexIII: _static/Annex_III.pdf
+.. _INF06-AnnexV: _static/Annex_V.pdf
+.. _INF06-AnnexIX: _static/ANNEX_IX.pdf
+.. _INF06-AnnexX: _static/Annex_X.pdf
+.. _INF06-AnnexXI: _static/Annex_XI.pdf
+.. _INF06-AnnexXII: _static/Annex_XII.pdf
+.. _INF06-Att3: _static/ATTACHMENT_3.pdf
 .. _INF06-Att3-web: https://filecloud.wmo.int/share/s/6Oi2yCoEQCu59dJFADg1Pg
 
 .. _WMO1160: https://library.wmo.int/records/item/55063-manual-on-the-wmo-integrated-global-observing-system?language_id=15&offset=9
@@ -181,7 +181,7 @@ Useful weblinks
 .. _RRR_WS_2022_3b3: _static/RRR_Workshop_20220927_Day1-3.b.3-PrioritizationConcept-SBoukabara.pdf
 .. _RRR_WS_2022_3b3-web: https://wmoomm.sharepoint.com/:p:/s/wmocpdb/EYUxNvMQ3CdDpcW_ORRLdQ0BCU_PPvcdBL_HMhCBmsHsAw?e=wt0bAP
 
-.. _RRR_WS_2022_5a: RRR_Workshop_20220927_Day1-5.a-Guidance-to-PoCs-RMunro.pdf
+.. _RRR_WS_2022_5a: _static/RRR_Workshop_20220927_Day1-5.a-Guidance-to-PoCs-RMunro.pdf
 .. _RRR_WS_2022_5a-web: https://wmoomm.sharepoint.com/:p:/s/wmocpdb/ER0tx_IbhcVCphJruxQSEJIBXcupc8nSl6SqZdt_vTVfEQ?e=X0JER4
 
 .. _RRR_WS_2023_1-web: https://community.wmo.int/en/meetings/rolling-review-requirements-rrr-1st-introductory-workshop
@@ -196,8 +196,8 @@ Useful weblinks
 .. _RRR_WS_2023_2-update: _static/2st-RRR-workshop_PoC_1.3-KPremec.pdf
 .. _RRR_WS_2023_2-update-web: https://wmoomm.sharepoint.com/:p:/s/wmocpdb/EWk45qE1M_JDvlmTDbCAPyABXhaQOM4HRhdGezFRUdYM-A?e=XCJblh
 
-.. _OSCAR_Man_2021: _static/OSCAR User Manual 20th July 2021.pdf
-.. _OSCAR_Man_2016: _static/OSCAR User Manual(2016 ver. 1).pdf
+.. _OSCAR_Man_2021: _static/OSCAR_User_Manual_20th_July_2021.pdf
+.. _OSCAR_Man_2016: _static/OSCAR_User_Manual(2016_ver._1).pdf
 .. _OSCAR_Man_2013_PoC: _static/OSCAR_Focal_Point_Manual.pdf
 .. _OSCAR_Man_2013: _static/OSCAR_General_User_Manual.pdf
 .. _OSCAR_Man_2012: _static/RRR-process-1.2012.pdf
