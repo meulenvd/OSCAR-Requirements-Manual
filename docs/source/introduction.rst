@@ -29,7 +29,7 @@ follows:
 -  | Background *references*
    | *Authoritative references and guidance material to help for a
      better understanding of the practices and rules behind OSCAR and
-     the Roling Review of Requirements (RRR)*
+     the Rolling Review of Requirements (RRR)*
 
 -  | History
    | *A brief overview of the historic development of OSCAR/Requirements
@@ -51,16 +51,16 @@ the WIGOS Vision time frame.
 
 The basic structure used to record each individual requirement is shown
 in the figure below. There are three basic elements needed to express
-a requirement:
+a requirement:
 
 a.  the first element is to specify who wants the observation, this is
-    one of the Application Areas together with a comment which may
-    elaborate further, for example to identify a specific activity
+    one of the Application Areas together with a comment which may
+    elaborate further, for example to identify a specific activity
     within the overall Application;
 
 b.  the second element is to specify what the observation is,
-    importantly this combines a geophysical variable with the place/s
-    where it is to be observed within a defined list of 31 vertical
+    importantly this combines a geophysical variable with the places
+    where it is to be observed within a defined list of 31 vertical
     layers and 8 types of horizontal coverage (requirements should only
     be expressed where it makes sense to do so);
 
@@ -76,13 +76,13 @@ The Rolling Review of Requirements process
 ------------------------------------------
 
 The Rolling Review of Requirements (RRR) process is defined by
-the Manual on the WMO Integrated Global Observing
+the Manual on the WMO Integrated Global Observing
 System (`WMO-No. 1160 <WMO1160_>`_, section 2.2.4, Appendix 2.3 and Attachment
 3.1). The purpose of the RRR process is to provide a systematic and
 transparent process to support the high-level design and evolution of
 the WMO Integrated Global Observing System
 (`WIGOS <WIGOS-link_>`_) aligned
-with its `Vision in 2040 <VISION2040-link_>`_.
+with its `Vision in 2040 <VISION2040-link_>`_.
 The RRR process compiles information about requirements for
 observations, about observing system capabilities, their
 cost-effectiveness, and draws on experts and impact studies to provide
@@ -99,15 +99,15 @@ Structure of the OSCAR Requirements database
 
 The OSCAR Requirements database made available via the OSCAR weblinks is
 in fact a Variables oriented (flat) database, but associated with or
-ordered in specific Layers, Themes and the Application Areas. The list
+ordered in specific Layers, Categories and the Application Areas. The list
 of all requirements is a table containing for each variable the
 associated items and the quantitative values associated with required
 quality, performance and geographical availability. References to the
 sources of these requirements are provided as well.
 
 After entering the OSCAR Observation Requirements web page, several
-weblinks are shown indicated as “tabs” (Overview \| Variables \|
-Requirements \| Layers \| Themes \| Application Areas), which will
+weblinks are shown indicated as “tabs” (Overview \| Application Categories \|
+Application Areas \| Variables \| Requirements \| Layers), which will
 redirect to their specific themes. This Graphical User Interface (GUI)
 structure is typical throughout the OSCAR Observations Requirements web
 structure. Details of this structure and the further design of the
@@ -118,7 +118,7 @@ Historic background
 
 Until about 1970 weather forecasting was primarily based on synoptic
 observations. These observations were managed by the national weather
-services. Weather stations reported at fixed time intervals (every 6 ort
+services. Weather stations reported at fixed time intervals (every 6 or
 3 hours) at fixed (synoptic) timestamps data expressed as quantities
 (e.g. pressure) and weather phenomena (e.g. present weather). The
 reported observations were performed in line with the requirements as
@@ -144,21 +144,21 @@ the atmosphere within a shorter time interval than the forecast (e.g.
 within 24 hours), and (2) new earth observing satellites came into orbit
 and delivered large amounts of numeric data in near real time
 stimulating the numerical weather prediction development (NWP). It
-became clear that satellite observations in combination with NWP
+became clear that space-based (satellite) observations in combination with NWP
 introduced a new phase in weather forecasting. This significant change
 also affected the other areas of interest, and it became apparent that a
 review of the current practices on observations was necessary. Because
 observations by satellites are costly it was relevant to investigate the
 best practices providing the most cost-effective results. The growing
-satellite community therefore initiated and developed a policy focussing
-or requirements, existing capabilities and gap analyses. This policy is
+satellite community therefore initiated and developed a policy focusing
+on requirements, existing capabilities and gap analyses. This policy is
 in fact the base of the Rolling Review of Requirements and the reference
 for the vision of future developments of the WIGOS.
 
 The requirements are formulated and kept up to date in
 `OSCAR/Requirements <OSCAR-req_>`_. These requirements are essential to be able to
 formulate the future approach and development of WIGOS and the system to
-exchange data, satellite and surface based.
+exchange data, space-based and surface-based.
 
 For some more details on the history of OSCAR, see the :doc:`History <history>` section.
 
@@ -167,9 +167,6 @@ Contact
 
 In case of comments or questions, please contact_ us by e-mail
 
-|  
-|  
-|  
 
 ----------------------------------------------------------
 
@@ -181,9 +178,9 @@ In case of comments or questions, please contact_ us by e-mail
 
 :editor: `JPM`
 
-:update: `2024-08-31 22:44 CEST`
+:update: `2024-11-30 11:55 CET`
 
-:status: `TEST`
+:status: `TEST` (REV #1)
 
 
 .. _WIGOS-link: https://community.wmo.int/en/activity-areas/WIGOS

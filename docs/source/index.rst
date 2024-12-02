@@ -10,7 +10,7 @@
 Welcome
 =======
 
-Welcome to all Points of Contact and Managers of the Earth System
+Welcome to all Points of Contact and Coordinators of the Earth System
 Application Categories supporting the `OSCAR/Requirements <OSCAR-req_>`_ database.
 
 This Manual is a help and cookbook to verify, update, complement and add
@@ -37,13 +37,13 @@ For this Manual six basic entries are provided:
    decisions.
 
 -  :doc:`Guidance <cookbook>`. A step-by-step approach for the Points of Contacts and
-   EPAC Managers to correctly fill in the database entries (or to add
+   ESAC Managers to correctly fill in the database entries (or to add
    variables). This guide is in fact a cookbook with a checklist to
    assist the process of updating.
 
 -  :doc:`Regulatory material <references>`. References are provided to published
    documentation, like Manuals which are part of the WMO Technical
-   Regulations, Manuals on OSCAR/Requirements, informative documents
+   Regulations, user manuals on OSCAR modules, informative documents
    considered by the WMO Technical Commissions, etcetera.
 
 -  :doc:`History <history>`. A brief overview is provided of the historic development
@@ -72,8 +72,7 @@ Contents
 	FAQ <faq>
 
 
-|
-|
+
 
 ----------------------------------------------------------
 
@@ -85,9 +84,9 @@ Contents
 
 :editor: `JPM`
 
-:update: `2024-08-31 17:09 CEST`
+:update: `2024-12-02 17:35 CET`
 
-:status: `TEST`
+:status: `TEST` (REV #1)
 
 .. _OSCAR-req: https://space.oscar.wmo.int/observingrequirements
 

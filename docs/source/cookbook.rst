@@ -150,8 +150,8 @@ Step 2: Login
 -------------
 
 
-WMO secretariat should has provided you with a username and password
-(UN/PW). UN/PW are private and should be shared. To login you should
+WMO Secretariat should have provided you with a username and password
+(UN/PW). UN/PW are private and should **not** be shared. To login you should
 open the `OSCAR website <oscar-web_>`_ on your browser and
 then select the “Observation Requirements” tab. Selecting this tab will
 prevent login in in other OSCAR environments. On the top right you will
@@ -175,7 +175,7 @@ the many web pages of OSCAR.
 
 In the area on the right side, you will find personal details. Check
 these items and update the items using (arrow 2) Update my personal
-Data, where you can change tour password as well.
+Data, where you can change your password as well.
 
 On the left side you may start to create a new variable or add a new
 requirement to a variable (arrow 3), just by clicking these buttons. But
@@ -512,7 +512,7 @@ Step 5: Follow up after updating
 --------------------------------
 
 It is useful to inform by e-mail your contact at the WMO secretariat or
-using obs-rrr@wmo.int that modifications were carried out so the
+by using this contact_ that modifications were carried out so the
 OSCAR/Requirement Administrator can continue with the confirmation
 process.
 
@@ -543,9 +543,9 @@ after login).
 
 :editor: `JPM`
 
-:update: `2024-09-14 23:40 CEST`
+:update: `2024-12-02 17:38 CET`
 
-:status: `TEST`
+:status: `TEST`(REV. 1)
 
 .. cookbook internal links and hyperlinks
 

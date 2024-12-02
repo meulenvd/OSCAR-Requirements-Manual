@@ -2,8 +2,8 @@
 
 .. _history:
 
-Historic background
-===================
+History
+=======
 
 In Meteorology, Climatology and all other Environmental activities
 awareness and understanding of the behaviour of the state of the
@@ -23,7 +23,7 @@ rather than on objective analyses. For example, the interpretation of
 synoptic weather charts was a primary base and resulting discoveries
 using these charts helped to improve forecasts. During the second half
 of the twentieth century the introduction of fast computer systems and
-satellite data a more quantitative based analysis practice became
+space-based (satellite) data a more quantitative based analysis practice became
 leading. Starting with the classical thermodynamic variables, determined
 with the traditional surface and upper air-based observations, it became
 clear that for further improvements of the services a much broader set
@@ -40,20 +40,18 @@ first step is to define such a set of physical and chemical variables
 without taking into consideration any available observation technology.
 So, just the pure quantities as such irrelevant of how the variables are
 determined and measured. The second step is to analyse the currently
-available data, reported from present surface and satellite based
+available data, reported from present surface and space-based based
 observing systems. This two-step approach is typical within OSCAR.
 Within OSCAR we have the OSCAR Observation Requirements environment,
 which are the technology free requirements and the OSCAR Capabilities
 environment, split into a Space-based and a Surface-based section. The
 OSCAR Capabilities sections provide the present state of all observation
 techniques and the reported variables, determined by these systems. The
-OSCAR Observation Requirements and OSCAR Capabilities make is possible
-to perform further Analyse based on a gap approach, called the Critical
-Review and is documented in the Statements of Guidance (SoG), provided
+OSCAR Observation Requirements and OSCAR Capabilities make it possible
+to perform further Analysis based on a gap approach, called the Critical
+Review and is documented in the Gap Analysis provided
 for each Application Area.
-|  
-|  
-|  
+  
 
 ----------------------------------------------------------
 
@@ -65,6 +63,6 @@ for each Application Area.
 
 :editor: `JPM`
 
-:update: `2024-08-31 22:46 CEST`
+:update: `2024-12-02 17:32 CET`
 
-:status: `TEST`
+:status: `TEST`(REV #1)

@@ -30,7 +30,7 @@ editing or deleting a variable)
 Although the database is presented as one “flat” database, without
 nested sub-databases the variables themselves are classified, organized
 in Domains. Each Domain has its subdomains. Also, each variable is
-representative for specific layers in the atmosphere. For instance, the
+representative for specific layers in the domain. For instance, the
 variable “Accumulated precipitation (over 24 h)” is member of the
 sub-domain “Clouds and precipitation”, being part of the Domain
 “Atmosphere”. For this variable the layer may be “Near surface”. For
@@ -72,7 +72,7 @@ Other relevant “tabs” on this web page are:
 
 1. Layers (vertical Layers and horizontal Coverages)
 
-2. Themes (Cross-cutting themes)
+2. Application Categories (Earth System Application Category)
 
 3. Application Areas.
 
@@ -103,18 +103,19 @@ their definitions and acronyms used in the lists of variables.
 
    For more details about Layers visit this `Link <OSCAR-layers_>`_. 
 
-Themes
-------
+.. Comment - Themes is removed 
+   Themes
+   ------
 
-The tab Themes provides a list with present Cross-cutting themes to show
-a specific view on a topic / area of interest which is not otherwise
-covered by domains or the WMO application areas. Themes are used to add
-additional semantic information ("tagging") to variables. This can then
-be used for filtering purposes in the Requirements or Variables table.
-Examples are Cryosphere and Volcanoes.
+   The tab Themes provides a list with present Cross-cutting themes to show
+   a specific view on a topic / area of interest which is not otherwise
+   covered by domains or the WMO application areas. Themes are used to add
+   additional semantic information ("tagging") to variables. This can then
+   be used for filtering purposes in the Requirements or Variables table.
+   Examples are Cryosphere and Volcanoes.
 
-Select this TAB for a complete overview of all themes with their areas
-of interest and associated variables.
+   Select this TAB for a complete overview of all themes with their areas
+   of interest and associated variables.
 
 Application Areas and Application Categories
 --------------------------------------------
@@ -287,9 +288,9 @@ three entries:
 
 -  `Observation Requirements`_
 
--  `Satellite Capabilties`_
+-  `Space-based Capabilties`_
 
--  `Surface based Capabilties`_
+-  `Surface-based Capabilties`_
 
 This page also informs on the background of OSCAR in general and it is
 recommended to consider the items on this page to obtain a good idea on
@@ -363,7 +364,7 @@ will see on top:
 |figureS06|
 
 This page shows “Details” for this AA and also the Focal Point (Point of
-Contact: naam and e-mail). On the right all the “Variables measured in
+Contact: name and e-mail). On the right all the “Variables measured in
 this Application Area” are shown. You may select in this box a specific
 variable, e.g. “Wind gust” and will get an overview within the List of
 Variable environment with all requirements stated by all AA. Such an
@@ -457,17 +458,16 @@ may select a set of variables using the “Filter table” button (For
 instance to select a set of variables defined for an Application Area).
 The table has eight columns, indicated by
 
-+--------+--------------+--------------+---------------+------------+------------+--------------+------------+
-|   Id   |   Variable   |   Domain     |   Measure-    |   Defi-    |   Uncer-   |   Required   |   Layers   |
-|        |   name       |              |   ment        |   nition   |   tenty    |   for App.   |            |
-|        |              |              |   unit        |            |   Units    |              |            |
-+--------+--------------+--------------+---------------+------------+------------+--------------+------------+
++--------+--------------+------------+-------------+------------+-------------+-------------+------------+
+|   Id   |   Variable   |   Domain   | Measurement | Definition | Uncertainty |   Required  |   Layers   |
+|        |   name       |            | unit        |            | Units       |   for App.  |            |
++--------+--------------+------------+-------------+------------+-------------+-------------+------------+
 
 These headers stand for the following descriptions:
 
 :Id: Variable identification number (an index)
 
-:Variable: name Name of the variable (see Definition)
+:Variable name: Name of the variable (see Definition)
 
 :Domain: The geophysical Domain or sub-domain, e.g. Land Surface (see
          under the “Layers” section for further explanation)
@@ -477,7 +477,7 @@ These headers stand for the following descriptions:
 :Definition: A definition for this variable with some extra details to
              prevent confusion with other comparable variables
 
-:Uncertenty Units: The SI unit, the uncertainty associated with the variable
+:Uncertainty Units: The SI unit, the uncertainty associated with the variable
                    reported value (should be the same as the measurement unit, or relative
                    in percentages, %)
 
@@ -524,8 +524,8 @@ Each variable is documented with:
    surface);
 
 -  The physical unit of the measurement, and the unit utilized for
-   expressing its accuracy. For any given physical variable there should
-   be only one unit of measurement and one unit for the accuracy.
+   expressing its uncertainty. For any given physical variable there should
+   be only one unit of measurement and one unit for the uncertainty.
    Therefore, if different units have to be used when a variable is
    observed as a profile and as a total column, then the 3D variable and
    its total column should be regarded as different variables (e.g.
@@ -568,13 +568,13 @@ columns, indicated by
 | Res | Res | Cyc | /decade   |          | Quality  | Level |
 +-----+-----+-----+-----------+----------+----------+-------+
 
-+--------+---------+-------------+------------+-------------+----------------+
-| 15     | 16      | 17          | 18         | 19          |  20            |
-+--------+---------+-------------+------------+-------------+----------------+
-| Source | General | Application | Horizontal | Observation | Perferformance |
-|        | Comment | Area        | Coverage   | Comment     | Comment        |
-|        |         | Comment     | Comment    |             |                |
-+--------+---------+-------------+------------+-------------+----------------+
++--------+---------+-------------+------------+-------------+-------------+
+| 15     | 16      | 17          | 18         | 19          |  20         |
++--------+---------+-------------+------------+-------------+-------------+
+| Source | General | Application | Horizontal | Observation | Performance |
+|        | Comment | Area        | Coverage   | Comment     | Comment     |
+|        |         | Comment     | Comment    |             |             |
++--------+---------+-------------+------------+-------------+-------------+
 
 :Id: Requirements identification number (an index)
 
@@ -1119,7 +1119,7 @@ analyses, uncertainty, calculated in terms of Root Mean Square Error
     (Obs - First Guess) for each individual platform. RMS (Obs - First
     Guess) is a good monitoring measure, but it does not lead directly to a
     measure of observation error, so it cannot directly compare with the
-    user requirements for accuracy. So if
+    user requirements for uncertainty. So if
     better estimates of uncertainties are available these should be
     preferred and those values stored in the database instead.
 
@@ -1333,9 +1333,7 @@ It is advised to place comments in all sections to provide a better
 understanding of the stated requirements for the user. The text may be
 freely chosen but should be clear for every user to understand.
 
-|  
-|  
-|  
+  
 
 ----------------------------------------------------------
 
@@ -1347,9 +1345,9 @@ freely chosen but should be clear for every user to understand.
 
 :editor: `JPM`
 
-:update: `2024-08-31 17:10 CEST`
+:update: `2024-12-02 17:27 CET`
 
-:status: `TEST`
+:status: `TEST`(REV 1)
 
 .. substitions UTF8 characters
 
